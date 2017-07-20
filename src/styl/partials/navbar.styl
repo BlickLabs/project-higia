@@ -1,5 +1,5 @@
 .site-navbar
-  background white
+  background transparent
   display flex
   align-items center
   height 78px // Change
@@ -8,6 +8,8 @@
   top 0
   width 100%
   z-index 12
+  padding-right 120px
+  padding-left 120px 
 
   & + main
     padding-top 78px // Change
@@ -20,13 +22,16 @@
   color white // Change
 
 .site-navbar__desktop-logo-container
-  img
-    width remify(150) // Change
+  h1
+    font-size remify(21px)
+    color #4c4c4c
 
 .site-navbar__menu-container
   flex-grow 1
   text-align right
   height 100%
+  display flex
+  justify-content flex-end
 
 .site-navbar__menu
   height 100%
@@ -34,12 +39,40 @@
   align-items center
   justify-content flex-end
 
+.site-navbar__lang
+  height 100%
+  display flex
+  align-items center
+  justify-content flex-end
+
 .site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+  color #4c4c4c
+  font-size remify(13)
+  margin-right 20px
+  letter-spacing .1px
+  transition .2s color ease-in-out
 
   &:hover, &.active
-    color white // Change
+    color #ee9bbe
+
+.lang-div
+  height 14px
+  width 1px
+  background-color #ee9bbe
+  margin-right 20px
+
+.site-navbar__lang-link
+  color #4c4c4c
+  font-size remify(12)
+  margin-right 15px
+  letter-spacing .1px
+  transition .2s color ease-in-out
+  
+  &:hover
+    color #ee9bbe
+    
+  &.active
+    color #4c4c4c
 
 @media screen and (max-width: 876px) // Change
   .site-navbar
