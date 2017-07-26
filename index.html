@@ -44,7 +44,7 @@
       <main>
         
   <div id="particles-container" class="particles-container">
-    <div class="absolute-container">
+    <div class="absolute-container" id="absolute-container">
       <div class="lines-container">
         <a href="#section_one">
           <div class="line-container">
@@ -188,12 +188,14 @@
         </div>
       </section>
       <section class="section_three" id="section_three">
-        <div class="section_three-content">
-          <h2 class="section_three-title higia-font-helveticaneue-bold">Who is Higia?</h2>
-          <p class="section_three-description higia-font-helveticaneue-thin">Get to know our tem</p>
-          <a href="team.html">
-            <button class="higia-btn btn-pink higia-font-helveticaneue-medium">The team</button>
-          </a>
+        <div class="section_three-container">
+          <div class="section_three-content">
+            <h2 class="section_three-title higia-font-helveticaneue-bold">Who is Higia?</h2>
+            <p class="section_three-description higia-font-helveticaneue-thin">Get to know our team</p>
+            <a href="team.html">
+              <button class="higia-btn btn-pink higia-font-helveticaneue-normal">The team</button>
+            </a>
+          </div>
         </div>
       </section>
       <section class="section_four" id="section_four">
@@ -318,6 +320,7 @@
   </div>
   <div class="footer-section_three">
     <ul class="footer-nav_menu">
+      <li class="nav_item higia-font-helveticaneue-light">Eva</li>
       <li class="nav_item higia-font-helveticaneue-light">About us</li>
       <li class="nav_item higia-font-helveticaneue-light">Products</li>
       <li class="nav_item higia-font-helveticaneue-light">News</li>
@@ -328,7 +331,7 @@
     </ul>
   </div>
   <div class="footer-section_four">
-    <p class="footer-copy higia-font-helveticaneue-thin">© Copyright, Higia Technologies 2017</p>
+    <p class="footer-copy higia-font-helveticaneue-thin">© Copyright, Higia Technologies <span id="license-year"></span></p>
   </div>
 </footer>
 
