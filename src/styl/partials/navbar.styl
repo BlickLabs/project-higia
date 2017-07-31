@@ -1,32 +1,52 @@
 .site-navbar
-  background white
+  background transparent
   display flex
   align-items center
-  height 78px // Change
   left 0
   position fixed
   top 0
   width 100%
   z-index 12
+  padding-right 120px
+  padding-left 120px
+  transition .3s background ease
+  transition .3s height ease
 
   & + main
-    padding-top 78px // Change
+    padding-top 0px
+
+.nav-white-bg
+  background-color #fff
+  box-shadow 0 2px 9px 0 rgba(0, 0, 0, 0.14)
+  height 100px
+
+.nav-transparent-bg
+  background-color transparent
+  height 125px
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
   display none
 
 .site-navbar__menu-trigger
-  color white // Change
+  color red
 
 .site-navbar__desktop-logo-container
-  img
-    width remify(150) // Change
+  transition .2s text-shadow ease-in-out
+  transition .2s transform ease-in-out
+  h1
+    font-size remify(21px)
+    color #4c4c4c
+  &:hover
+    transform scale(1.01)
+    text-shadow: 0px 0px 1px rgba(114,117,117,.15);
 
 .site-navbar__menu-container
   flex-grow 1
   text-align right
   height 100%
+  display flex
+  justify-content flex-end
 
 .site-navbar__menu
   height 100%
@@ -34,12 +54,42 @@
   align-items center
   justify-content flex-end
 
+.site-navbar__lang
+  height 100%
+  display flex
+  align-items center
+  justify-content flex-end
+
 .site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+  color #4c4c4c
+  font-size remify(13)
+  margin-right 20px
+  letter-spacing .1px
+  transition .2s color ease-in-out
+  cursor pointer
 
   &:hover, &.active
-    color white // Change
+    color #ee9bbe
+
+.lang-div
+  height 14px
+  width 1px
+  background-color #ee9bbe
+  margin-right 20px
+
+.site-navbar__lang-link
+  color #4c4c4c
+  font-size remify(12)
+  margin-right 15px
+  letter-spacing .1px
+  transition .2s color ease-in-out
+  cursor pointer
+  
+  &:hover
+    color #ee9bbe
+    
+  &.active
+    color #4c4c4c
 
 @media screen and (max-width: 876px) // Change
   .site-navbar
