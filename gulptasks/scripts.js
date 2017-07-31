@@ -13,6 +13,9 @@ gulp.task('build:scripts', function () {
   gulp.src(config.paths.src.root + '/js/higia-particles_config.json')
     .pipe(gulp.dest(baseDir.js));
 
+  gulp.src(config.paths.src.root + '/js/higia-particles_config-safari.json')
+    .pipe(gulp.dest(baseDir.js));
+
   return gulp.src(config.paths.src.scripts_all)
     .pipe(jshint('./.jshintrc'))
     .pipe(jshint.reporter('jshint-stylish'))
