@@ -6,7 +6,7 @@ var sectionThree = document.getElementById('section_three');
 var sectionFour = document.getElementById('section_four');
 var sectionFive = document.getElementById('section_five');
 var sectionSix = document.getElementById('section_six');
-var sectionSeven = document.getElementById('section_seven');
+var sectionSeven = document.getElementById('home-b-particles-container');
 
 var linesContainer = document.querySelector('.lines-container')
 var lines = document.querySelectorAll('.line')
