@@ -7,6 +7,6 @@ if (window.navigator.vendor == 'Apple Computer, Inc.') {
 }
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-container', partConfig, function() {
-  console.log('callback - particles.js config loaded');
-});
+particlesJS.load('home-a-particles-container', partConfig);
+
+particlesJS.load('home-b-particles-container', partConfig);
