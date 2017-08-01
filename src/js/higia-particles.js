@@ -1,7 +1,7 @@
 var partConfig
 
 if (window.navigator.vendor == 'Apple Computer, Inc.') {
-  partConfig = 'js/higia-particles_config-safari.json'
+  partConfig = 'js/higia-particles_config.json'
 } else {
   partConfig = 'js/higia-particles_config.json'
 }
