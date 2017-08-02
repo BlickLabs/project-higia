@@ -68,7 +68,9 @@ function changeLineColor() {
   }
 }
 
+if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-higia/index.html' || window.location.pathname === '/project-higia/') {
+  window.addEventListener('scroll', changeLineColor)
 
-window.addEventListener('scroll', changeLineColor)
+  changeLineColor()
 
-changeLineColor()
+}
