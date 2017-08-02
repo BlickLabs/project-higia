@@ -6,62 +6,77 @@
 {% block title %}
 Eva
 {% endblock %}
-  <div class="eva-container">
+
+{% block content %}
+  <div class="section_eva">
     <section class="eva-section_one">
-      <h1 class="eva-section_one-title">Eva</h1>
-      <div class="eva-section_one-title-divider"></div>
-      <h2 class="eva-section_one-subtitle">The Auto-Exploration Bra</h2>
+      <div class="eva-section_one-title-wrapper">
+        <h1 class="eva-section_one-title higia-font-gtamericatrial-bold">Eva</h1>
+        <div class="eva-section_one-title-divider"></div>
+        <h2 class="eva-section_one-subtitle higia-font-helveticaneue-thin">The Auto-Exploration Bra</h2>
+      </div>
       <div class="eva-section_one-content">
         <div class="eva-image-wrapper">
           <img src="img/eva/eva.png" alt="Eva breast cancer detection bra" class="eva-image">
+          <div class="eva-feature-graph">
+            <div class="stroke-container">
+              <div class="stroke"></div>
+            </div>
+            <div class="bubble-container">
+              <div class="bubble">
+                <div class="subbubble"></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="eva-description-wrapper">
-          <p class="eva-description">
+          <p class="eva-description higia-font-helveticaneue-thin">
             EVA is a wearable device that is designed to detect abnormalities in breast thermal patterns and tissue elasticity, which can be strong indicators of early stage breast cancer. It consists of two biosensing patches that the user can place on her own brasier.
           </p>
-          <p class="eva-description">
+          <p class="eva-description higia-font-helveticaneue-thin">
             The patches collect data that is sent to the user’s phone or tablet through bluetooth technology, and our Artificial Intelligence algorithms produce a risk assessment within minutes.
           </p>
         </div>
       </div>
-      <div class="eva-section_one-features">
-        <div class="eva-feature">
-          <div class="feature-icon-wrapper">
-            <img src="img/eva-icon/feature-1.svg" alt="Thermal Abnormalitites" class="feature-icon">
+      <div class="eva-section_one-cards">
+        <div class="eva-card">
+          <div class="card-icon-wrapper">
+            <img src="img/eva-icon/card-1.svg" alt="Thermal Abnormalitites" class="card-icon">
           </div>
-          <div class="feature-title-wrapper">
-            <h3 class="feature-title">Thermal Abnormalities</h3>
+          <div class="card-title-wrapper">
+            <h3 class="card-title higia-font-helveticaneue-bold">Thermal <br>Abnormalities</h3>
           </div>
-          <div class="feature-description-wrapper">
-            <p class="feature-description">As cancer cells multiply, blood vessels grow around them in a process known as angiogenesis, in order to provide nutrients that allow the tumor to grow. These blood vessel formations are distinguishable from those naturally occurring in the body, and hence breast cancer risk can be assessed by detecting the thermal patterns associated with them.</p>
-          </div>
-        </div>
-        <div class="eva-feature">
-          <div class="feature-icon-wrapper">
-            <img src="img/eva-icon/feature-1.svg" alt="Thermal Abnormalitites" class="feature-icon">
-          </div>
-          <div class="feature-title-wrapper">
-            <h3 class="feature-title">Thermal Abnormalities</h3>
-          </div>
-          <div class="feature-description-wrapper">
-            <p class="feature-description">As cancer cells multiply, blood vessels grow around them in a process known as angiogenesis, in order to provide nutrients that allow the tumor to grow. These blood vessel formations are distinguishable from those naturally occurring in the body, and hence breast cancer risk can be assessed by detecting the thermal patterns associated with them.</p>
+          <div class="card-description-wrapper">
+            <p class="card-description higia-font-helveticaneue-thin">As cancer cells multiply, blood vessels grow around them in a process known as angiogenesis, in order to provide nutrients that allow the tumor to grow. These blood vessel formations are distinguishable from those naturally occurring in the body, and hence breast cancer risk can be assessed by detecting the thermal patterns associated with them.</p>
           </div>
         </div>
-        <div class="eva-feature">
-          <div class="feature-icon-wrapper">
-            <img src="img/eva-icon/feature-1.svg" alt="Thermal Abnormalitites" class="feature-icon">
+        <div class="eva-card">
+          <div class="card-icon-wrapper">
+            <img src="img/eva-icon/card-2.svg" alt="Tissue Elasticity" class="card-icon">
           </div>
-          <div class="feature-title-wrapper">
-            <h3 class="feature-title">Thermal Abnormalities</h3>
+          <div class="card-title-wrapper">
+            <h3 class="card-title higia-font-helveticaneue-bold">Thermal Abnormalities</h3>
           </div>
-          <div class="feature-description-wrapper">
-            <p class="feature-description">As cancer cells multiply, blood vessels grow around them in a process known as angiogenesis, in order to provide nutrients that allow the tumor to grow. These blood vessel formations are distinguishable from those naturally occurring in the body, and hence breast cancer risk can be assessed by detecting the thermal patterns associated with them.</p>
+          <div class="card-description-wrapper">
+            <p class="card-description higia-font-helveticaneue-thin">Benign and malignant tissues have different elastic properties and hence breast cancer risk can be assessed by quantifying tissue elasticity. Our tactile sensors produce smooth vibrations that excite the breast tissue surrounding the mammary glands, generating elasticity data that our artificial intelligence algorithms study to determine the presence of abnormal masses.</p>
+          </div>
+        </div>
+        <div class="eva-card">
+          <div class="card-icon-wrapper">
+            <img src="img/eva-icon/card-3.svg" alt="Mode Of Use" class="card-icon">
+          </div>
+          <div class="card-title-wrapper">
+            <h3 class="card-title higia-font-helveticaneue-bold">Thermal Abnormalities</h3>
+          </div>
+          <div class="card-description-wrapper">
+            <p class="card-description higia-font-helveticaneue-thin">EVA can be used in the commodity of the user’s home. The user just has to place the device, follow simple instructions on her phone or tablet, and in less than an hour she will have results from her monthly examination. During this time, the user is free to continue with her daily routine as long as she doesn’t engage in intense physical activity and is not heavily exposed to sunlight.</p>
           </div>
         </div>
       </div>
     </section>
     <div class="eva-section_divider"></div>
+    <section class="eva-section_two">
+      
+    </section>
   </div>
-{% block content %}
-
 {% endblock %}
