@@ -39,6 +39,46 @@
 .team-photo-container
 	width 229px
 	height 220px
+	margin-bottom 18px
 
-.team-photo-img img
-	width 100%
+.team-photo-img
+	position relative
+
+	& img.social
+		display block
+		margin 13px auto
+		width 20.9px
+		height 20.9px
+
+	& p
+		margin-top 56px
+		margin-bottom 2px
+		font-size remify(18)
+		line-height 21px
+		letter-spacing .9px
+
+	& span
+		font-size remify(13)
+		line-height 21px
+		letter-spacing .1px
+
+	& img
+		width 100%
+
+	&:hover .team-photo-mask
+		transition opacity .5s ease
+		opacity .77
+
+	&:hover .team-photo-img img
+		transform scale(1.1)
+
+.team-photo-mask
+	color white
+	text-align center
+	position absolute
+	background-color #ee9bbe
+	width 195px
+	height 185.3px
+	top 17px
+	left 17px
+	opacity 0
