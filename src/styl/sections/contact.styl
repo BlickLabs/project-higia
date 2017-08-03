@@ -1,3 +1,73 @@
 .contact-container
   padding-top 186px
-  
+
+.contanct-content
+  max-width 1060px
+  padding 0 50px
+  center-block()
+
+//Contact Header
+.contact-header
+  margin-bottom 65px
+
+.contact-title-wrapper
+  padding-left 23px
+
+.contact-title
+  font-size remify(45px)
+  color #4b4b4b
+  letter-spacing .1px
+
+.contact-description-wrapper
+  width 500px
+  padding-left 20px
+  border-left 3px solid #ee9bbe
+
+.contact-description-wrapper
+  font-size remify(20px)
+  color #4c4c4c
+  line-height 1.4
+  letter-spacing .2px
+
+//Contact Header
+.contact-form-wrapper
+  display flex
+  justify-content flex-end
+
+.contact-form-container
+  width 628px
+  padding 68px 0 84px
+  box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.14)
+
+.contact-form-content
+  max-width 470px
+  center-block()
+
+.contact-form-title
+  font-size remify(30px)
+  color #4b4b4b
+  letter-spacing .1px
+  margin 0 0 55px 0
+
+.contact-field
+  border 0
+  border-bottom solid 1px #e1e1e1
+  width 100%
+  height 42px
+  padding 0 5px 10px
+  font-size remify(17px)
+  color #4b4b4b
+  letter-spacing .1px
+
+.contact-label-placeholder
+  color #4b4b4b
+  font-size (17px)
+  position absolute
+  top 20%
+  left .5rem
+  transition .4s all ease
+
+.contact-field:focus ~ .contact-label-placeholder, .contact-field:valid ~ .contact-label-placeholder
+  top -50%
+  left 0
+  font-weight $medium
