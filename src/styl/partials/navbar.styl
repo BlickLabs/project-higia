@@ -91,6 +91,10 @@
   &.active
     color #4c4c4c
 
+// display none, in not version mobile
+.site-navbar-icon-close
+  display none
+
 @media screen and (max-width: 876px) // Change
   // Ocultando la seccion de lang
   .site-navbar__lang
@@ -123,7 +127,7 @@
 
   .site-navbar__menu-container
     background #4c4c4c // Change
-    opacity .97
+    opacity .98
     height 100vh
     margin-right 0
     overflow-y auto
@@ -155,7 +159,7 @@
     letter-spacing 1px
     color #e1e1e1
     padding 4px 0 4px 18px
-    background-image url('../img/slider-arrow/navbar-right.svg')
+    background-image url('../img/navbar-mobile/navbar-right.svg')
     background-repeat no-repeat
     background-size 4%
     background-position right center
@@ -168,3 +172,16 @@
 
     &:hover
       color #e1e1e1
+
+.site-navbar-icon-close
+  font-size remify(30)
+  display inline-block
+  color #fff
+  position absolute
+  top 43px
+  right 33px
+  width 15px
+  height 15px
+
+  & img
+    width 100%
