@@ -96,7 +96,7 @@
   display none
 
 @media screen and (max-width: 876px) // Change
-  // Ocultando la seccion de lang
+  // section lang hidden in mobile
   .site-navbar__lang
     display none
 
@@ -132,10 +132,10 @@
     margin-right 0
     overflow-y auto
     position fixed
-    right -280px //Cambio temporal para trabajar sobre el navbar
+    right -327px
     top 0
-    transition right 0.2s
-    width 280px
+    transition right 0.2s ease
+    max-width 327px
     padding-top 25px // Change
 
   .site-navbar__menu-container--show-menu
@@ -155,7 +155,7 @@
     display block
     text-align left
     flex-basis 100%
-    font-size remify(15)
+    rfont-size(16px, 876px, 15px)
     letter-spacing 1px
     color #e1e1e1
     padding 4px 0 4px 18px
@@ -165,6 +165,7 @@
     background-position right center
     margin-left 47px
     margin-right 38px
+    margin-bottom 31px
 
     &.active
       color #e1e1e1
@@ -174,9 +175,7 @@
       color #e1e1e1
 
 .site-navbar-icon-close
-  font-size remify(30)
   display inline-block
-  color #fff
   position absolute
   top 43px
   right 33px
