@@ -9,12 +9,12 @@
   margin-bottom 75px
 
 .section-about__hi
-  font-size remify(45)
+  rfont-size(46px, 414px, 22px)
   color #4b4b4b
 
 .section-about__descrip
   color #4b4b4b
-  font-size remify(20)
+  rfont-size(20px, 414px, 14px)
   letter-spacing .2px
   line-height 28px
 
@@ -29,13 +29,13 @@
 
 .section-about-greek__title
   padding-left 49px
-  font-size remify(30)
+  rfont-size(30px, 414px, 18px)
   line-height 39px
   color #4b4b4b
 
 .section-about-greek__descrip
   padding-left 50px
-  font-size remify(20)
+  rfont-size(20px, 414px, 14px)
   line-height 28px
   letter-spacing .2px
   color #4b4b4b
@@ -47,8 +47,8 @@
   padding-top 17px
   padding-bottom 17px
   text-align center
-  width 95px
-  height 95px
+  width 78.7px
+  height 78.7px
   border-radius 50%
   background-color #fff
   box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.05)
@@ -99,3 +99,106 @@
   & img
     width 8px
     height 15px
+
+.section-about-bg-only-mobil
+  display none
+
+// query for max-width 1024px
+@media screen and (max-width: 1024px)
+  .section-about-left,
+  .section-about-container-bg
+    width 50%
+
+  .section-about-hi
+    padding-left 30px
+    width 100%
+
+  .section-about-greek
+    width 100%
+    padding-left 30px
+
+  .section-about-greek__descrip,
+  .section-about-greek__title
+    padding-left 0px
+
+  .section-about-container-bg
+    overflow hidden
+
+// query for max-width 786px
+@media screen and (max-width: 786px)
+  .section-about
+    flex-direction column
+
+  .section-about-hi
+    padding-right 30px
+
+  .section-about-left
+    width 100%
+
+  .section-about-container-bg
+    width 100%
+    padding-top 50px
+
+  .section-about-container-box
+   padding 10px
+
+  .section-about-bg-only-mobil
+    display block
+
+    & img
+      width 100%
+
+  .section-about-bg
+    display none
+
+// start styles mobile version
+@media screen and (max-width: 414px)
+  .section-about
+    text-align center
+    flex-direction column
+    padding-bottom 59px
+
+  .section-about-bg
+    display none
+
+  .section-about-hi,
+  .section-about-greek,
+  .section-about-container-bg
+    padding-left 56px
+    padding-right 56px
+    width 100%
+
+  .section-about-greek__title,
+  .section-about-greek__descrip
+    padding-left 0px
+
+  .section-about__hi
+    letter-spacing .1px
+
+  .section-about__descrip
+    width 262px
+    margin 0 auto
+    line-height 19px
+    letter-spacing .3px
+
+  .section-about-bg-only-mobil
+    display block
+    margin-bottom 90px
+
+    & img
+      width 100%
+
+  .section-about-greek__title
+    line-height 39px
+
+  .section-about-greek__descrip
+    line-height 18px
+
+  .section-about-box
+    width 110px
+    height 110px
+
+    & img
+      height 23px
+      padding-top 0px
+      margin-top 18px
