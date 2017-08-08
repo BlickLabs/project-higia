@@ -1,0 +1,204 @@
+.section-about
+  margin-top 120px
+  display flex
+  padding-bottom 136px
+
+.section-about-hi
+  width 562.4px
+  padding-left 144px
+  margin-bottom 75px
+
+.section-about__hi
+  rfont-size(46px, 414px, 22px)
+  color #4b4b4b
+
+.section-about__descrip
+  color #4b4b4b
+  rfont-size(20px, 414px, 14px)
+  letter-spacing .2px
+  line-height 28px
+
+.section-about-greek
+  position relative
+  background-color #fafafa
+  padding-left 148px
+  padding-top 80px
+  padding 95px
+  padding-right 63px
+  width 646px
+
+.section-about-greek__title
+  padding-left 49px
+  rfont-size(30px, 414px, 18px)
+  line-height 39px
+  color #4b4b4b
+
+.section-about-greek__descrip
+  padding-left 50px
+  rfont-size(20px, 414px, 14px)
+  line-height 28px
+  letter-spacing .2px
+  color #4b4b4b
+
+.section-about-greek__icon
+  position absolute
+  right 46px
+  top -46px
+  padding-top 17px
+  padding-bottom 17px
+  text-align center
+  width 78.7px
+  height 78.7px
+  border-radius 50%
+  background-color #fff
+  box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.05)
+
+  & img
+    height 60px
+
+// Boxes
+
+.section-about-container-bg
+  flex-grow 1
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+
+.section-about-bg
+  margin-top 90px
+
+  & img
+    height 418px
+
+.section-about-container-box
+  display flex
+  flex-grow 1
+  justify-content center
+  align-items center
+
+.section-about-box
+  text-align center
+  color #ee9bbe
+  font-size remify(15)
+  letter-spacing 2px
+  line-height 19px
+  width 170.8px
+  height 171px
+  border-radius 2px
+  background-color #ffffff
+  box-shadow 0 2px 8px 0 rgba(0, 0, 0, .10)
+
+  & img
+    padding-top 32px
+    height 69px
+
+.section-about-arrow
+  padding 0 26px 0 26px
+
+  & img
+    width 8px
+    height 15px
+
+.section-about-bg-only-mobil
+  display none
+
+// query for max-width 1024px
+@media screen and (max-width: 1024px)
+  .section-about-left,
+  .section-about-container-bg
+    width 50%
+
+  .section-about-hi
+    padding-left 30px
+    width 100%
+
+  .section-about-greek
+    width 100%
+    padding-left 30px
+
+  .section-about-greek__descrip,
+  .section-about-greek__title
+    padding-left 0px
+
+  .section-about-container-bg
+    overflow hidden
+
+// query for max-width 786px
+@media screen and (max-width: 786px)
+  .section-about
+    flex-direction column
+
+  .section-about-hi
+    padding-right 30px
+
+  .section-about-left
+    width 100%
+
+  .section-about-container-bg
+    width 100%
+    padding-top 50px
+
+  .section-about-container-box
+   padding 10px
+
+  .section-about-bg-only-mobil
+    display block
+
+    & img
+      width 100%
+
+  .section-about-bg
+    display none
+
+// start styles mobile version
+@media screen and (max-width: 414px)
+  .section-about
+    text-align center
+    flex-direction column
+    padding-bottom 59px
+
+  .section-about-bg
+    display none
+
+  .section-about-hi,
+  .section-about-greek,
+  .section-about-container-bg
+    padding-left 56px
+    padding-right 56px
+    width 100%
+
+  .section-about-greek__title,
+  .section-about-greek__descrip
+    padding-left 0px
+
+  .section-about__hi
+    letter-spacing .1px
+
+  .section-about__descrip
+    width 262px
+    margin 0 auto
+    line-height 19px
+    letter-spacing .3px
+
+  .section-about-bg-only-mobil
+    display block
+    margin-bottom 90px
+
+    & img
+      width 100%
+
+  .section-about-greek__title
+    line-height 39px
+
+  .section-about-greek__descrip
+    line-height 18px
+
+  .section-about-box
+    width 110px
+    height 110px
+
+    & img
+      height 23px
+      padding-top 0px
+      margin-top 18px

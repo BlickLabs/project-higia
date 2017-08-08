@@ -24,7 +24,6 @@ function changeLineColor() {
 
   if (sY >= (sectionTwo.offsetTop - (sectionOne.clientHeight * 0.4)) && sY < ((sectionTwo.clientHeight * 0.6) + (sectionTwo.offsetTop))) {
     lines[1].classList.add('active');
-    evaFeatures ()
   } else {
     lines[1].classList.remove('active');
   }
@@ -68,7 +67,9 @@ function changeLineColor() {
   }
 }
 
+if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-higia/index.html' || window.location.pathname === '/project-higia/') {
+  window.addEventListener('scroll', changeLineColor)
 
-window.addEventListener('scroll', changeLineColor)
+  changeLineColor()
 
-changeLineColor()
+}
