@@ -57,7 +57,9 @@
             </a>
           </div>
           <div class="facts">
-            <h2 class="facts-title higia-font-helveticaneue-bold">Facts</h2>
+            <div class="facts-title-container">
+              <h2 class="facts-title higia-font-helveticaneue-bold">Facts</h2>
+            </div>
             <div class="facts-content">
               <div class="fact">
                 <div class="fact-content">
@@ -101,64 +103,57 @@
           <div class="section_two-title_divider"></div>
           <h3 class="section_two-subtitle higia-font-helveticaneue-thin">The Auto-Exploration Bra</h3>
         </div>
-        <p class="section_two-description higia-font-helveticaneue-thin">Breast Cancer detection bra equipped with tactile sensors to map the surface of the breast and surrounding areas, along with:</p>
+        <p class="section_two-description higia-font-helveticaneue-thin"><span class="description-bold higia-font-helveticaneue-bold">Breast Cancer detection wearable</span>  equipped with thermal sensors to map abnormal patterns inside the breast, along with:</p>
         <ul class="section_two-features">
-          <li class="feature higia-font-helveticaneue-medium">Color</li>
-          <li class="feature higia-font-helveticaneue-medium">Temperature</li>
-          <li class="feature higia-font-helveticaneue-medium">Texture</li>
-        </ul>
-        <div id="hidden-description" class="hidden-description">
-          <p class="hidden-description-content higia-font-helveticaneue-thin"><span class="description-bold higia-font-helveticaneue-bold">Breast Cancer detection wearable</span>  equipped with thermal sensors to map abnormal patterns inside the breast, along with:</p>
-          <ul class="section_two-features">
           <li class="feature higia-font-helveticaneue-medium">Temperature</li>
           <li class="feature higia-font-helveticaneue-medium">Texture</li>
           <li class="feature higia-font-helveticaneue-medium">Tissue Elasticity</li>
         </ul>
+        <div id="hidden-description" class="hidden-description">
+          <div class="eva-container">
+            <img id="eva" class="eva" src="img/eva/eva.png" alt="Eva">
+            <div class="eva-feature temp">
+              <div class="eva-feature-graph">
+                <div class="stroke-container">
+                  <div class="stroke"></div>
+                </div>
+                <div class="bubble-container">
+                  <div class="bubble">
+                    <div class="subbubble"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="eva-feature-name">Temperature</div>
+            </div>
+            <div class="eva-feature color">
+              <div class="eva-feature-graph color">
+                <div class="stroke-container">
+                  <div class="stroke"></div>
+                </div>
+                <div class="bubble-container">
+                  <div class="bubble">
+                    <div class="subbubble"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="eva-feature-name">Tissue Elasticity</div>
+            </div>
+            <div class="eva-feature text">
+              <div class="eva-feature-graph">
+                <div class="stroke-container">
+                  <div class="stroke"></div>
+                </div>
+                <div class="bubble-container">
+                  <div class="bubble">
+                    <div class="subbubble"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="eva-feature-name">Texture</div>
+            </div>
+          </div>
         </div>
-        <button id="eva-button" class="eva-button">
-        </button>
-        <div class="eva-container">
-          <img id="eva" class="eva" src="img/eva/eva.png" alt="Eva">
-          <div class="eva-feature temp">
-            <div class="eva-feature-graph">
-              <div class="stroke-container">
-                <div class="stroke"></div>
-              </div>
-              <div class="bubble-container">
-                <div class="bubble">
-                  <div class="subbubble"></div>
-                </div>
-              </div>
-            </div>
-            <div class="eva-feature-name">Temperature</div>
-          </div>
-          <div class="eva-feature color">
-            <div class="eva-feature-graph color">
-              <div class="stroke-container">
-                <div class="stroke"></div>
-              </div>
-              <div class="bubble-container">
-                <div class="bubble">
-                  <div class="subbubble"></div>
-                </div>
-              </div>
-            </div>
-            <div class="eva-feature-name">Color</div>
-          </div>
-          <div class="eva-feature text">
-            <div class="eva-feature-graph">
-              <div class="stroke-container">
-                <div class="stroke"></div>
-              </div>
-              <div class="bubble-container">
-                <div class="bubble">
-                  <div class="subbubble"></div>
-                </div>
-              </div>
-            </div>
-            <div class="eva-feature-name">Texture</div>
-          </div>
-        </div>
+        <button id="eva-button" class="eva-button"></button>
       </section>
     </div>
   </div>

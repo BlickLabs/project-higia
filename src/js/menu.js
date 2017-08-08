@@ -39,4 +39,9 @@
       $('.site-navbar__menu-trigger').click(detectClick);
     }
   });
+
+  $('#navbar-close').on('click touchstart', function(e) {
+    e.preventDefault();
+    $('.site-navbar__menu-container').removeClass('site-navbar__menu-container--show-menu');
+  })
 })();
