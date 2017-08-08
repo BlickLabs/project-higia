@@ -94,10 +94,10 @@
 .section_one-content
   max-width 708px
   padding 0 37px
-  margin 208px auto 145px
+  margin 208px auto 152px
 
 .section_one-title
-  rfont-size(54px,500px,29px)
+  rfont-size(54px,550px,29px)
   color #4b4b4b
   margin 0 0 40px 0
   line-height 1.03
@@ -110,14 +110,14 @@
   animation-timing-function ease-in-out
 
 .facts
-  max-width 1122px
-  padding 0 43px
+  max-width 1136px
+  padding 0 42px
   center-block()
   display flex
   align-items center
 
 .facts-title
-  rfont-size(30px, 500px, 21px)
+  rfont-size(30px, 550px, 21px)
   color #4c4c4c
   margin auto 30px auto 0
 
@@ -137,12 +137,9 @@
 .fact-content
   width 150px
 
-.fact-content.content-2
-  width 130px
-
 .fact-dscrptn
   margin auto 0 auto 0
-  rfont-size(12.5px, 500px, 12px)
+  rfont-size(12.5px, 550px, 12px)
   color #4c4c4c
   letter-spacing .2px
   font-weight lighter
@@ -226,12 +223,12 @@
 .hidden-description
   overflow hidden
   height 0
-  transition 1s height ease
+  transition .75s height ease
   margin 0 0 35px 0
   
   &.active
     padding-top 50px
-    height 220px
+    height 500px
 
 .hidden-description-content
   color #4b4b4b
@@ -259,6 +256,7 @@
   &.active
     transform rotate(180deg)
     box-shadow 0px -1px 3px 0px rgba(74,74,74,0.2)
+    margin 0 0 25px 0
 
 .eva-container
   text-align center
@@ -697,7 +695,7 @@
   cursor pointer
   transition .2s background-color ease-in-out
 
-@media (max-width 1124px)
+@media (max-width 1138px)
   .facts
     flex-direction column
     justify-content center
@@ -714,16 +712,36 @@
     .fact
       &:first-child
         margin-left 0
+
+@media (min-width 1020px)
+  .section_one
+    height 100vh
   
-@media (max-width 1000px)
+  .section_one-container
+    height 100%
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+  
+  .section_one-content
+    margin 0
+    max-width 708px
+    padding 0 37px
+    display flex
+    height calc(100% - 182px)
+    justify-content center
+    flex-direction column
+
+@media (max-width 1020px)
   .facts-content
     max-width 600px
   
   .fact
     margin-bottom 40px
   
-  &:nth-child(3)
-    margin-left 0
+    &:nth-child(3)
+      margin-left 0
 
 @media (max-width 890px)
   .lines-container
@@ -737,7 +755,21 @@
   .section_one-mask-container
     margin-top 88px
 
-@media (max-width 500px)
+@media (max-width 550px)
+  .section_one-content
+    margin-bottom 61px
+  
+  .facts-content
+    max-width 287px
+
+  .fact
+    flex-direction column-reverse
+    align-items flex-start
+  
+  .fact-icon
+    text-align left
+    margin-bottom 15px
+  
   .section_one-mask img
     height 230px
   
@@ -747,15 +779,15 @@
   .section_one-title
     width 222px
     margin-bottom 16px
-
-@media (max-width 550px)  
-  .fact
-    flex-direction column-reverse
-    align-items flex-start
   
-  .fact-icon
-    text-align left
-    margin-bottom 15px
+  .facts-content
+    justify-content space-between
+  
+  .fact
+    margin-left 0
+  
+  .fact-content
+    width 136px
 
 @media (max-width 400px)
   .section_one-mask img
