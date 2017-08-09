@@ -1,3 +1,31 @@
+.gtkub-bg
+  position fixed
+  background-color rgba(0,0,0,.85)
+  top 0
+  right 0
+  bottom 0
+  left 0
+  z-index 14
+  display flex
+  justify-content center
+  align-items center
+
+.video-hidden
+  display none
+
+.gtkub-container
+  position relative
+  width 75%
+
+.gtkub-close
+  position absolute
+  left 101%
+  bottom 100%
+  cursor pointer
+
+  img
+    width 25px
+
 .particles-container
   background-color #fff
   position relative
@@ -71,7 +99,8 @@
 //*************** section_one ***************//
 .section_one
   position relative
-  padding 1px 1px 67.5px 1px
+  padding 1px 1px 1px 1px
+  margin-bottom 66.5px
 
 .section_one-mask
   position absolute
@@ -81,25 +110,25 @@
   right 0
   pointer-events none
 
+.section_one-mask-container
+  max-width 1000px
+  text-align right
+  padding 0 44px
+  margin 132px auto 0
+
 .section_one-mask img
   height 390px
 
-.section_one-mask-container
-  max-width 912px
-  text-align right
-  center-block()
-  margin-top 132px
-
 .section_one-content
-  max-width 634px
-  margin-top 208px
-  center-block()
-  margin-bottom 145px
+  max-width 708px
+  padding 0 37px
+  margin 208px auto 152px
 
 .section_one-title
-  font-size remify(54px)
+  rfont-size(54px,550px,29px)
   color #4b4b4b
   margin 0 0 40px 0
+  line-height 1.03
   span
     color #5e5e5e
 
@@ -109,17 +138,20 @@
   animation-timing-function ease-in-out
 
 .facts
-  max-width 1036px
+  max-width 1136px
+  padding 0 42px
   center-block()
   display flex
+  align-items center
 
 .facts-title
-  font-size remify(30px)
+  rfont-size(30px, 550px, 21px)
   color #4c4c4c
   margin auto 30px auto 0
 
 .facts-content
   display flex
+  flex-wrap wrap
 
 .fact
   display flex
@@ -133,18 +165,15 @@
 .fact-content
   width 150px
 
-.fact-content.content-2
-  width 130px
-
 .fact-dscrptn
   margin auto 0 auto 0
-  font-size remify(12.5px)
+  rfont-size(12.5px, 550px, 12px)
   color #4c4c4c
   letter-spacing .2px
   font-weight lighter
 
 .fact-nmbrs
-  font-size remify(19px)
+  rfont-size(19px, 500px, 17px)
   display block
 
 .fact-icon
@@ -222,12 +251,12 @@
 .hidden-description
   overflow hidden
   height 0
-  transition 1s height ease
+  transition .75s height ease
   margin 0 0 35px 0
   
   &.active
     padding-top 50px
-    height 220px
+    height 500px
 
 .hidden-description-content
   color #4b4b4b
@@ -255,6 +284,7 @@
   &.active
     transform rotate(180deg)
     box-shadow 0px -1px 3px 0px rgba(74,74,74,0.2)
+    margin 0 0 25px 0
 
 .eva-container
   text-align center
@@ -504,7 +534,7 @@
   left -50px
 
 .arrow
-  padding-bottom 130px
+  padding-bottom 220px
   width 10px
 
 //*************** section_five ***************//
@@ -692,3 +722,101 @@
   border 0
   cursor pointer
   transition .2s background-color ease-in-out
+
+@media (max-width 1138px)
+  .facts
+    flex-direction column
+    justify-content center
+  
+  .facts-title-container
+    margin-bottom 40px
+  
+  .facts-title
+    margin 0
+    text-align center
+  
+  .facts-content 
+    justify-content center
+    .fact
+      &:first-child
+        margin-left 0
+
+@media (min-width 1020px)
+  .section_one
+    height 100vh
+  
+  .section_one-container
+    height 100%
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+  
+  .section_one-content
+    margin 0
+    max-width 708px
+    padding 0 37px
+    display flex
+    height calc(100% - 182px)
+    justify-content center
+    flex-direction column
+
+@media (max-width 1020px)
+  .facts-content
+    max-width 600px
+  
+  .fact
+    margin-bottom 40px
+  
+    &:nth-child(3)
+      margin-left 0
+
+@media (max-width 890px)
+  .lines-container
+    left 20px
+
+@media (max-width 811px)
+  .lines-container
+    display none
+
+@media (max-width 765px)
+  .section_one-mask-container
+    margin-top 88px
+
+@media (max-width 550px)
+  .section_one-content
+    margin-bottom 61px
+  
+  .facts-content
+    max-width 287px
+
+  .fact
+    flex-direction column-reverse
+    align-items flex-start
+  
+  .fact-icon
+    text-align left
+    margin-bottom 15px
+  
+  .section_one-mask img
+    height 230px
+  
+  .section_one-content
+    margin-top 116px
+  
+  .section_one-title
+    width 222px
+    margin-bottom 16px
+  
+  .facts-content
+    justify-content space-between
+  
+  .fact
+    margin-left 0
+  
+  .fact-content
+    width 136px
+
+@media (max-width 400px)
+  .section_one-mask img
+    height 206px
