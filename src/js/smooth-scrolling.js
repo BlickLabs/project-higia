@@ -6,7 +6,7 @@ var sectionThree = document.getElementById('section_three');
 var sectionFour = document.getElementById('section_four');
 var sectionFive = document.getElementById('section_five');
 var sectionSix = document.getElementById('section_six');
-var sectionSeven = document.getElementById('section_seven');
+var sectionSeven = document.getElementById('home-b-particles-container');
 
 var linesContainer = document.querySelector('.lines-container')
 var lines = document.querySelectorAll('.line')
@@ -24,7 +24,6 @@ function changeLineColor() {
 
   if (sY >= (sectionTwo.offsetTop - (sectionOne.clientHeight * 0.4)) && sY < ((sectionTwo.clientHeight * 0.6) + (sectionTwo.offsetTop))) {
     lines[1].classList.add('active');
-    evaFeatures ()
   } else {
     lines[1].classList.remove('active');
   }
@@ -68,7 +67,9 @@ function changeLineColor() {
   }
 }
 
+if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-higia/index.html' || window.location.pathname === '/project-higia/') {
+  window.addEventListener('scroll', changeLineColor)
 
-window.addEventListener('scroll', changeLineColor)
+  changeLineColor()
 
-changeLineColor()
+}
