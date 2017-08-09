@@ -11,7 +11,17 @@ if (window.location.pathname === '/index.html' || window.location.pathname === '
   });
 
   gtkubClose.addEventListener('click', function(){
-    gtkubBg.classList.add('video-hidden');
-    gtkubVideo.pause();
+    stopVideo();
   });
+
+  gtkubBg.addEventListener('click', function(e){
+    if (e.target === gtkubBg) {
+      stopVideo();
+    }
+  });
+}
+
+function stopVideo() {
+  gtkubBg.classList.add('video-hidden');
+  gtkubVideo.pause();
 }
