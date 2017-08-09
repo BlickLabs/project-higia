@@ -36,7 +36,7 @@
 
 //Eva section one content
 .eva-section_one-content
-  max-width 865px
+  max-width 880px
   center-block()
   display flex
   margin-bottom 70px
@@ -47,7 +47,20 @@
 
 .eva-image
   width 300px
-  margin-right 130px
+  margin-right 145px
+  transform translateX(283px)
+  animation eva-trans 1s
+  animation-delay 1s
+  animation-fill-mode forwards
+
+.eva-feature.evades
+  left 71%
+  top 39%
+  .stroke
+      animation-delay 2s
+    
+    .bubble
+      animation-delay 2.6s
 
 .eva-description
   font-size remify(19px)
@@ -55,9 +68,42 @@
   letter-spacing .3px
   color #4b4b4b
   margin 0
+  opacity 0
+  animation evades .5s
+  animation-delay 3.1s
+  animation-fill-mode forwards
   
   &:first-child
     margin-bottom 35px
+
+@keyframes eva-trans
+  0%
+    transform translateX(283px)
+
+  100%
+    transform translateX(0)
+
+@keyframes evades-stroke
+  0%
+    width 0
+  
+  100%
+    width 100%
+
+@keyframes evades-bubble
+  0%
+    opacity 0
+
+  100%
+    opacity 1
+
+@keyframes evades
+  0%
+    opacity 0
+
+  100%
+    opacity 1
+
 
 //Eva section one cards
 .eva-section_one-cards
@@ -77,16 +123,24 @@
     transform scale(1.05)
     box-shadow 0 2px 17px 0 rgba(0, 0, 0, 0.13)
 
+  &:nth-of-type(3)
+    .card-title-wrapper
+      .card-title
+        line-height 46px
+
 .card-icon-wrapper
   margin 0 0 27px 21px
 
 .card-title-wrapper
-  simple-border(left, 3px, #ee9bbe)
+  simple-border(left, 2px, #ee9bbe)
   padding-left 18px
-  margin 0 0 17px 0
+  margin 0 0 20px 0
 
 .card-title
   font-size remify(20px)
+  color #4b4b4b
+  letter-spacing 1px
+  margin 0
 
 .card-description-wrapper
   margin 0 35px 0 21px
@@ -141,10 +195,10 @@
   justify-content center
   align-items center
   margin-bottom 60px
+  box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.2)
   
   &:hover
     transform scale(1.03)
-    box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.2)
 
   &:nth-child(1)
     img
