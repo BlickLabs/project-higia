@@ -58,7 +58,7 @@
   top 39%
   .stroke
       animation-delay 2s
-    
+
     .bubble
       animation-delay 2.6s
 
@@ -72,7 +72,7 @@
   animation evades .5s
   animation-delay 3.1s
   animation-fill-mode forwards
-  
+
   &:first-child
     margin-bottom 35px
 
@@ -86,7 +86,7 @@
 @keyframes evades-stroke
   0%
     width 0
-  
+
   100%
     width 100%
 
@@ -196,30 +196,30 @@
   align-items center
   margin-bottom 60px
   box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.2)
-  
+
   &:hover
     transform scale(1.03)
 
   &:nth-child(1)
     img
       width 74px
-  
+
   &:nth-child(2)
     img
       width 60px
-  
+
   &:nth-child(3)
     img
       width 60px
-  
+
   &:nth-child(4)
     img
       width 103px
-  
+
   &:nth-child(5)
     img
       width 88px
-  
+
   &:nth-child(6)
     img
       width 114px
@@ -261,7 +261,7 @@
   margin 0
   margin-bottom 20px
   color #4b4b4b
-  
+
   &:nth-child(3)
     margin 0
 
@@ -292,3 +292,85 @@
   text-align center
   letter-spacing 0.2px
   color #4b4b4b
+
+.only-mobile
+  display none
+
+@media screen and (max-width 360px)
+
+  .eva-section_one-title-wrapper
+    flex-direction column
+
+  .eva-section_one-title-divider
+    width remify(22)
+    height 0
+    background none
+    border-bottom solid 1px #ee9bbe
+    margin-bottom remify(10)
+    margin-top remify(10)
+
+  .eva-section_one-content
+    flex-direction column
+
+    .eva-feature.evades
+      display none
+
+  .eva-description-wrapper
+    position relative
+    padding-left remify(35)
+    padding-right remify(35)
+
+    & .eva-section_one-title-divider
+      display inline-block
+      position absolute
+      margin-top 0
+      margin-right 0
+      border-left 2px solid #ee9bbe
+      width 2px
+      height remify(21)
+      top 2px
+
+  .eva-description
+    padding-left remify(20)
+    line-height remify(28)
+
+  .eva-section_two-description-wrapper
+    max-width 100%
+    padding 0px 25px
+
+  .eva-section_two-description
+    text-align left
+
+  .trials-partners-container
+    padding 0 30px
+    max-width 100%
+
+  .trials-partner-wrapper
+    width 144px
+    height 117px
+
+  .eva-section_three
+    background-image none
+
+  .eva-section_three-container
+    max-width 100%
+
+    & .eva-section_three-title-wrapper
+      margin-left 25px
+      padding-right 88px
+
+    & .eva-section-three-description-wrapper
+      padding-left 25px
+      padding-right 25px
+
+  .arrival-container
+    width 310px
+    height 230px
+    left 25px
+
+  .arrival-title
+    margin-top 25px
+
+  .arrival-info
+    max-width 85%
+    margin 0 auto 15px auto
