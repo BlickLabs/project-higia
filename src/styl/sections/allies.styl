@@ -27,35 +27,81 @@
   transition .45s transform ease, .3s filter ease
   filter grayscale(100%)
   margin-bottom 55px
-  
+
   &:hover
     box-shadow 0 3px 8px 0 rgba(200,205,205, .5)
     transform scale(1.03)
     filter grayscale(0);
-  
+
   &:nth-child(1) .ally
       width 78px
-  
+
   &:nth-child(2) .ally
       width 120px
-  
+
   &:nth-child(3) .ally
       width 124px
-  
+
   &:nth-child(4) .ally
       width 56px
-  
+
   &:nth-child(5) .ally
       width 68px
-  
+
   &:nth-child(6) .ally
       width 155px
-  
+
   &:nth-child(7) .ally
       width 72px
-  
+
   &:nth-child(8) .ally
       width 137px
-  
+
   &:nth-child(9) .ally
       width 54px
+
+@media screen and (max-width: 360px)
+
+  .allies-container
+    padding-top 150px
+
+  .ally-wrapper
+    width 130px !important
+
+@media screen and (max-width: 768px)
+
+  .allies-container
+    padding-top 150px
+
+  .allies-wrapper
+    padding-right 20px
+    padding-left 20px
+
+  .ally-wrapper
+    width 210px
+
+@media screen and (max-width: 414px)
+
+  .allies-container
+    padding-top 150px
+
+  .allies-wrapper
+    justify-content center
+    flex-wrap wrap
+    align-items center
+
+  .ally-wrapper
+    width 140px
+    height 93.9px
+    margin-bottom 55px
+
+    &:nth-child(even)
+      margin-right 20px
+      margin-left 4.5px
+
+    &:nth-child(odd)
+      margin-left 20px
+      margin-right 4.5px
+
+    &:nth-child(6) .ally
+        width 120px
