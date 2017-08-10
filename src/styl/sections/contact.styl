@@ -48,7 +48,7 @@
   color #4b4b4b
   letter-spacing .1px
   margin 0 0 45px 0
-  
+
 .input-wrapper.contact-input-wrapper
   margin-bottom 54px
 
@@ -83,4 +83,43 @@
   letter-spacing 1.3px
   border 0
   cursor pointer
-  transition .2s background-color ease-in-out  
+  transition .2s background-color ease-in-out
+
+@media screen and (max-width: 425px)
+
+  .contact-container
+    padding-top 130px
+
+  .contact-header
+    padding-left remify(56)
+    padding-right remify(91)
+
+  .contact-description-wrapper
+    width 100%
+
+  .contanct-content
+    max-width 100%
+    padding 0
+
+  .contact-form-title,
+  .input-wrapper.contact-input-wrapper
+    padding-left remify(55)
+    padding-right remify(55)
+
+  .contact-label-placeholder
+    left remify(60)
+
+  .contact-field:focus ~ .contact-label-placeholder, .contact-field:valid ~ .contact-label-placeholder
+    left remify(55)
+
+  .button-wrapper
+    padding-left remify(55)
+
+    & .contact-button
+      font-size remify(20)
+
+@media screen and (max-width: 320px)
+
+  .contact-header
+    padding-left remify(36)
+    padding-right remify(61)
