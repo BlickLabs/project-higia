@@ -3,7 +3,7 @@
 	// Information from the team to show dynamically
 	var team = [
 		{
-			name: 'Julián Ríos',
+			name: 'Julián Rios',
 			area: 'CEO',
 			description: 'Mis principales tareas como Director ejecutivo de Higia Technologies consisten en cerciorarse de que la visión de la compañía sea la correcta, proveer los recursos necesarios para la creación de productos, construir la cultura corporativa, tomar las decisiones estratégicas para el óptimo funcionamiento de la empresa y supervisar el funcionamiento de la misma.<p>Actualmente, soy el primer y más jóven mexicano en ser galardonado con el Premio Global al Estudiante Emprendedor y la medalla Sol Azteca al emprendimiento por parte de la Presidencia de la República.</p>',
 			social: {
@@ -53,15 +53,27 @@
 	];
 
 	// Set by default the description of element 0, in this case "Julian"
+	$('#js-hover-name').html(team[0].name);
+	$('#js-hover-area').html(team[0].area);
 	$('#js-hover-description').html(team[0].description);
 
 	// Displays information dynamically when hovering over each team member
-	$('.team-photo-img').on('click touchstart', function() {
-		var id = $(this).attr('data-hover-id');
-		$('#js-hover-name').text(team[id].name);
-		$('#js-hover-area').text(team[id].area);
-		$('#js-hover-description').html(team[id].description);
-		$('#js-hover-linkedin').attr('href', team[id].social.linkedin);
+	// $('.team-photo-img').on('hover', function() {
+	// 	var id = $(this).attr('data-hover-id');
+	// 	$('#js-hover-name').text(team[id].name);
+	// 	$('#js-hover-area').text(team[id].area);
+	// 	$('#js-hover-description').html(team[id].description);
+	// 	$('#js-hover-linkedin').attr('href', team[id].social.linkedin);
+	// })
+
+	$('.team-photo-img').mouseover(function() {
+		var $id = $(this).attr('data-hover-id');
+		var linkedin = '#js-hover-linkedin-' + $id;
+		
+		$(linkedin).attr('href', team[$id].social.linkedin);
+		$('#js-hover-name').text(team[$id].name);
+		$('#js-hover-area').text(team[$id].area);
+		$('#js-hover-description').html(team[$id].description);
 	})
 
 
