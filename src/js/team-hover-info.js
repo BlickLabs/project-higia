@@ -65,14 +65,6 @@
 	$('#js-hover-description').html(team[0].description);
 
 	// Displays information dynamically when hovering over each team member
-	// $('.team-photo-img').on('hover', function() {
-	// 	var id = $(this).attr('data-hover-id');
-	// 	$('#js-hover-name').text(team[id].name);
-	// 	$('#js-hover-area').text(team[id].area);
-	// 	$('#js-hover-description').html(team[id].description);
-	// 	$('#js-hover-linkedin').attr('href', team[id].social.linkedin);
-	// })
-
 	$('.team-photo-img').mouseover(function() {
 		var $id = $(this).attr('data-hover-id');
 		var linkedin = '#js-hover-linkedin-' + $id;
