@@ -452,13 +452,13 @@
 
 .section_three-title
   color #4b4b4b
-  font-size remify(34px)
+  rfont-size(34px, 500px, 21px)
   letter-spacing .1px
   margin 0 0 10px 0
 
 .section_three-description
   color #4b4b4b
-  font-size remify(20px)
+  rfont-size(20px, 500px, 17px)
   letter-spacing .7px
   margin 0 0 30px 0
 
@@ -469,7 +469,7 @@
   padding-bottom 72px
 
 .section_four-title
-  font-size remify(37px)
+  rfont-size(37px, 500px, 21px)
   color #4b4b4b
   text-align center
   margin-top 47px
@@ -513,12 +513,12 @@
 
 .slide-title
   color #4b4b4b
-  font-size remify(19px)
+  rfont-size(19px, 500px, 16px)
   margin 0 10px
 
 .slide-description
   color #4b4b4b
-  font-size remify(17px)
+  rfont-size(17px, 500px, 13px)
   line-height 1.41
   width 265px
 
@@ -586,7 +586,7 @@
   margin-right 12.5%
 
 .section_five-title
-  font-size remify(34px)
+  rfont-size(34px, 500px, 21px)
   color #4b4b4b
   margin 0 0 30px 0
   
@@ -672,13 +672,13 @@
 
 .section_seven-title
   margin 0 0 20px 0
-  font-size remify(54px)
+  rfont-size(54px, 500px, 21px)
   color #4b4b4b
   letter-spacing .1px
 
 .section_seven-subtitle
   margin 0 0 50px 0
-  font-size remify(30px)
+  rfont-size(30px, 500px, 17px)
   color #4b4b4b
   letter-spacing .1px
 
@@ -692,7 +692,7 @@
   width 540px
   height 80px
   padding 35px 5px 5px 10px
-  font-size remify(17px)
+  rfont-size(17px, 500px, 15px)
   color #4b4b4b
   letter-spacing .1px
   &::placeholder
@@ -702,12 +702,12 @@
 .section_seven-field:focus ~ .label-placeholder, .section_seven-field:valid ~ .label-placeholder
   top 15%
   left 0
-  font-size remify(19px)
+  rfont-size(19px, 500px, 17px)
 
 .label-placeholder
   color #4d4d4d
   font-weight $bold
-  font-size (21px)
+  rfont-size(21px, 500px, 17px)
   position absolute
   top 50%
   left .5rem
@@ -816,6 +816,97 @@
   
   .fact-content
     width 136px
+
+@media screen and (max-width 500px)
+  .section_five .higia-btn 
+    padding 12px 20px
+
+  .section_three
+    height 92vw
+    flex-direction column
+    justify-content flex-start
+    align-items center
+    background-image url('../img/backgrounds/section-3-mobile.png')
+    background-position center bottom
+    background-size cover
+  
+  .section_three-container
+    width 188px
+    text-align center
+  
+  .section_three-description
+    margin-bottom 18px
+  
+  .section_four
+    height 420px
+    padding-top 63px
+
+  .section_four-slider-container
+    max-width 260px
+  
+  .section_four-title
+    margin-top 0
+  
+  .higia-slide
+    img
+      width 70px
+  
+  .arrow-right
+    right -30px
+
+  .arrow-left
+    left -30px
+  
+  .higia-slide.slick-current 
+    .slider-container-description
+      left -95%
+      width 200px
+  
+  .slide-description
+    width 100%
+  
+  .arrow
+    padding-bottom 330px
+  
+  .section_five
+    height 63vw
+    background-color transparent
+  
+  .circuit-mask
+    background-image none
+  
+  .cupper-thing
+    background-image none
+
+  .section_five-container
+    width 55%
+    left initial
+  
+  .section_five-content
+    margin-right 32.5%
+  
+  .section_five-title
+    margin-bottom 16px
+
+  .section_seven
+    padding 82px 0 85px
+  
+  .section_seven-container
+    max-width 235px
+    center-block()
+  
+  .section_seven-title
+    margin-bottom 17px
+  
+  .section_seven-subtitle
+    margin-bottom 30px
+    line-height 1.24
+  
+  .input-wrapper
+    margin-bottom 40px
+  
+  #button-wrapper
+    padding 0
 
 @media (max-width 400px)
   .section_one-mask img
