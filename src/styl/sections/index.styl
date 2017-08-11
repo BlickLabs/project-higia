@@ -200,7 +200,7 @@
   margin 0 0 30px 0
 
 .section_two-title
-  font-size remify(40px)
+  rfont-size(40px, 500px, 21px)
   color #4b4b4b
   display inline-block
   margin 0 15px 0 0
@@ -212,13 +212,13 @@
   height 47px
 
 .section_two-subtitle
-  font-size remify(33px)
+  rfont-size(33px, 500px, 20px)
   color #4b4b4b
   display inline-block
   margin 0 0 0 15px
 
 .section_two-description
-  font-size remify(19.5px)
+  rfont-size(19.5px, 500px, 16px)
   color #4b4b4b
   text-align center
   max-width 570px
@@ -234,6 +234,7 @@
   .feature
     display inline-block
     color #4b4b4b
+    rfont-size(18px, 500px, 11px)
     text-transform uppercase
     padding-right 13px
     padding-left 10px
@@ -247,6 +248,9 @@
     width 2px
     height 100%
     display inline-block
+
+#section_two-mobile-button
+  display none
 
 .hidden-description
   overflow hidden
@@ -400,7 +404,7 @@
 .eva-feature-name
   opacity 0
   color #4b4b4b
-  font-size remify(15px)
+  rfont-size(15px, 500px, 8px)
   letter-spacing 3.5px
   text-transform uppercase
 
@@ -615,6 +619,9 @@
 .article
   width 370px
   margin-bottom 84px
+  
+  .read_all-button
+    display none
 
 .article-author
   margin 0 0 30px 0
@@ -633,7 +640,7 @@
 .article-highlight
   margin 0 0 20px 0
   height 54px
-  font-size remify(14px)
+  rfont-size(14px, 500px, 12px)
   color #5D5E5D
   line-height 1.27
   letter-spacing 0.5px
@@ -818,8 +825,105 @@
     width 136px
 
 @media screen and (max-width 500px)
+  .section_one
+    margin-bottom 11px
+
   .section_five .higia-btn 
     padding 12px 20px
+    
+  .section_two
+    padding-bottom 0
+  
+  .section_two-title_container
+    flex-direction column
+    margin-bottom 26px
+  
+  .section_two-title
+    margin 0 0 11px 0
+  
+  .section_two-title_divider
+    width 22px
+    height 1px
+  
+  #section_two-mobile-button
+    display inline-block
+  
+  .section_two-subtitle
+    margin 11px 0 0
+  
+  .section_two-description
+    width 244px
+    
+  .eva-container
+    width 182px
+  
+  .section_two-features 
+    margin-bottom 40px
+    .feature:nth-child(1), .feature:nth-child(2)
+      border-right 1px solid #4b4b4b
+  
+  .section_two-mobile-button
+    display block
+  
+  .hidden-description
+    padding-top 84px
+    height 330px
+  
+  .eva-container
+    .eva
+      width 182px
+  
+  .eva-feature.temp
+    top 10px
+    left 95%
+    
+  .eva-feature.color
+    flex-direction row-reverse
+    top 158px
+    right 95%
+    
+    .stroke-container
+      width 18px
+    
+    .eva-feature-name
+      width 60px
+    
+    .eva-feature-graph
+      margin-left 6px
+  
+  .eva-feature.text
+    bottom 35px
+    left 98%
+    
+    .stroke-container
+      width 18px
+  
+  .eva-feature-graph
+    margin-right 7px
+  
+  .stroke-container
+    width 10px
+  
+  .bubble-container
+    width 9px
+    height 9px
+
+  .bubble
+    width 9px
+    height 9px
+  
+  .subbubble
+    width 2.5px
+    height 2.5px
+  
+  .eva-feature-name
+    letter-spacing 1.3px
+    display flex
+    justify-content center
+    align-items center
+  
+  #eva-button
+    display none
 
   .section_three
     height 92vw
@@ -887,6 +991,46 @@
   
   .section_five-title
     margin-bottom 16px
+  
+  .buttont
+    background-color transparent
+    border 0
+
+  .articles
+    max-width 233px
+    text-align center
+    
+    .buttont-l
+      right 115%
+      top 40%
+    
+    .buttont-r
+      left 110%
+      top 40%
+  
+  .article
+    margin-bottom 0
+    outline 0
+  
+    .read_all-button
+      display inline
+  
+  .article-highlight
+    height 60px
+  
+  .article-author
+    center-block()
+    
+  .article-button
+    margin-right 14px
+  
+  .read_all-button
+    padding 10px 25px
+  
+  .articles-read_all
+    
+    .read_all-button
+      display none
 
   .section_seven
     padding 82px 0 85px
