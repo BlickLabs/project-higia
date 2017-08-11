@@ -25,6 +25,7 @@ Contact
             <form id="contact-form" action="http://integrations.blick.mx/higia/email/" method="post">
               <div class="input-wrapper contact-input-wrapper">
                 <input id="contact-form-name" type="text" name="name" class="contact-field higia-font-helveticaneue-thin" placeholder="" required >
+                <input hidden="true" type="text" name="last_name" placeholder="Nombre">
                 <label for="name" class="contact-label-placeholder higia-font-helveticaneue-thin">Name</label>
               </div>
               <div class="input-wrapper contact-input-wrapper">
@@ -46,6 +47,9 @@ Contact
                   <div class="blue"></div>
                 </div>
               </div>
+              <input hidden="true" type="text" name="phone" placeholder="hidden" value="">
+              <input hidden="true" type="text" name="address" placeholder="hidden" value="">
+              <input hidden="true" type="text" name="company" placeholder="hidden" value="">
             </form>
           </div>
         </div>
