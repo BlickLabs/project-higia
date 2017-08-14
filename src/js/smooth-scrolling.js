@@ -26,6 +26,9 @@ function changeLineColor() {
     lines[1].classList.add('active');
   } else {
     lines[1].classList.remove('active');
+    if (evaMatchMedia=true) {
+      evaFeatures()
+    }
   }
 
   if (sY >= (sectionThree.offsetTop - (sectionTwo.clientHeight * 0.4)) && sY < ((sectionThree.clientHeight * 0.6) + sectionThree.offsetTop)) {

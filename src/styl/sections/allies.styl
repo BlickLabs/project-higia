@@ -59,3 +59,49 @@
 
   &:nth-child(9) .ally
       width 54px
+
+@media screen and (max-width: 360px)
+
+  .allies-container
+    padding-top 150px
+
+  .ally-wrapper
+    width 130px !important
+
+@media screen and (max-width: 768px)
+
+  .allies-container
+    padding-top 150px
+
+  .allies-wrapper
+    padding-right 20px
+    padding-left 20px
+
+  .ally-wrapper
+    width 210px
+
+@media screen and (max-width: 414px)
+
+  .allies-container
+    padding-top 150px
+
+  .allies-wrapper
+    justify-content center
+    flex-wrap wrap
+    align-items center
+
+  .ally-wrapper
+    width 140px
+    height 93.9px
+    margin-bottom 55px
+
+    &:nth-child(even)
+      margin-right 20px
+      margin-left 4.5px
+
+    &:nth-child(odd)
+      margin-left 20px
+      margin-right 4.5px
+
+    &:nth-child(6) .ally
+        width 120px

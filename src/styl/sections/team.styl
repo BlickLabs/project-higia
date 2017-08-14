@@ -8,7 +8,7 @@
   padding-bottom 135px
 
 .team-our-team
-  max-width 264.5px
+  max-width 390.5px
 
 .team-line // Line pink of the title
   position absolute
@@ -43,10 +43,52 @@
 
 // Seccion de fotos
 .team-photos
+  padding-top remify(18)
   flex-wrap wrap
   display flex
   justify-content space-around
   width 742px
+  max-height 480px
+  overflow-y scroll
+
+  &::-webkit-scrollbar
+    width 9px
+    height 9px
+
+  &::-webkit-scrollbar-button
+    width 8px
+    height 8px
+
+  &::-webkit-scrollbar-thumb
+    background: #ee9bbe
+    border: 0px none #ffffff
+    border-radius: 50px
+
+  &::-webkit-scrollbar-thumb:hover
+    background #ee9bbe
+
+  &::-webkit-scrollbar-thumb:active
+    background #ee9bbe
+
+  &::-webkit-scrollbar-track
+    background #ffffff
+    border 0px none #ffffff
+    border-radius 50px
+
+  &::-webkit-scrollbar-track:hover
+    background #ffffff
+
+  &::-webkit-scrollbar-track:active
+    background #fff
+
+  &::-webkit-scrollbar-corner
+    background transparent
+
+  & .team-advisor
+    font-size 35px
+    margin-top remify(60)
+    flex-basis 100%
+    text-align center
 
 .team-photo-container
   width 229px
@@ -80,6 +122,7 @@
   &:hover .team-photo-mask
     transition opacity .5s ease
     opacity .77
+    cursor pointer
 
   &:hover .team-photo-img img
     transform scale(1.1)
@@ -94,6 +137,14 @@
   top 8%
   left 8%
   opacity 0
+
+  & .team-social
+    margin-top 1rem
+
+  & .team-social img
+    width 20px
+    height auto
+    text-align center
 
 @media screen and (max-width: 1024px)
   .team-our-team
@@ -112,6 +163,7 @@
 @media screen and (max-width: 414px)
   .team-line,
   .team-user,
+  .team-social,
   .team-descrip
     display none
 
