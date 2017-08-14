@@ -55,6 +55,69 @@
 			social: {
 				linkedin: 'https://www.linkedin.com/in/jose-angellavariegagomez/'
 			}
+		},
+		{
+			title: 'Our team',
+			name: 'Martín Urtíz',
+			area: 'AID',
+			description: 'Como parte del equipo de inteligencia artificial de Higia es mi deber el siempre estar actualizado con las nuevas tecnologías que podrían mejorar nuestros algoritmos de predicción.<p>También soy responsable del desarrollo de nuestras propias tecnologías, las cuales catapultan a nuestros algoritmos a ser los mejores en sus predicciones.</p>',
+			social: {
+				linkedin: '#'
+			}
+		},
+		{
+			title: 'Our team',
+			name: 'Rebecca Canales',
+			area: 'SAI',
+			description: 'En Higia colaboro en el área de software específicamente en el diseño, documentación y codificación de la base de datos.<p>Como mujer soy partícipe de dialogar sobre la comodidad y el diseño que llevará EVA, para demostrar que es un producto creado con la mejor calidad en cuanto a la tecnología utilizada, la investigación y el esfuerzo de todo el equipo. Con la finalidad de que los usuarios que porten a EVA tengan la confianza de que es un producto cómodo, seguro y fácil de utilizar.</p>',
+			social: {
+				linkedin: 'https://www.linkedin.com/in/rebecca-irene-canales-andonie-5a5a1a144/'
+			}
+		},
+		{
+			title: 'Our team',
+			name: 'Vicente Ferrara',
+			area: 'HDI',
+			description: 'Vicente Ferrara es un estudiante de Sistemas Digitales y Robótica en el Tecnológico de Monterrey Campus Monterrey. Y ha trabajado como Investigador en University of Texas MD Anderson Pulmonary Laboratory durante el verano 2016. Vicente realiza prácticas profesionales en Higia en el área de desarrollo de hardware.',
+			social: {
+				linkedin: '#'
+			}
+		},
+		{
+			title: 'Advisory Board',
+			name: 'Antonio Rallo',
+			area: 'S&TABM',
+			description: 'Antonio estudió biología marina en la Universidad de California. Fue Director de Tecnología Multimedia en Apple Europa, Director de Tecnología y Estrategia en Grupo Televisa, actualmente es el Cofundador de Kio Networks y Director Ejecutivo del fondo de inversion ID345',
+			social: {
+				linkedin: '#'
+			}
+		},
+		{
+			title: 'Advisory Board',
+			name: 'Felicia Knaul',
+			area: 'S&TABM',
+			description: 'La Dra. Felicia Knaul es Profesora Asociada de la Escuela de Medicina de Harvard y Directora de la Iniciativa de Equidad Global de Harvard, donde actúa como Co-directora de la Secretaría del Grupo de Trabajo Mundial sobre Acceso Ampliado al Cuidado y Control del Cáncer en los Países en Desarrollo. De igual manera, es economista de la Fundación Mexicana de la Salud.<p>Después de ser diagnosticado con cáncer de mama en 2007, el Dr. Knaul fundó la fundación Tómatelo a Pecho, una organización mexicana sin fines de lucro que promueve investigaciones, defensa, concientización e iniciativas de detección temprana para el cáncer de mama en América Latina. Ha publicado artículos sobre el cáncer de mama en diversos países y medios. Su libro relatando su experiencia personal con cáncer de mama y como fundador de la organización Tómatelo a pecho, fue lanzado en el 2009 y ampliado y publicado en inglés en 2012 titulado Beauty without the Breast.</p>',
+			social: {
+				linkedin: 'https://www.linkedin.com/in/felicia-marie-knaul-68a5ab50/'
+			}
+		},
+		{
+			title: 'Advisory Board',
+			name: 'Julio Frenk',
+			area: 'S&TABM',
+			description: 'Julio Frenk fungió como Ministro de Salud de México de 2000 a 2006. Allí definió una ambiciosa agenda para reformar el sistema de salud del país e introdujo un programa de cobertura universal integral, conocido como Seguro Popular, que amplió el acceso a la atención médica para más de 55 millones de mexicanos previamente no asegurados.<p>Fue el director general y fundador del Instituto Nacional de Salud Pública en México, una de las principales instituciones de este tipo en el mundo. También se desempeñó como director ejecutivo a cargo de la Evidencia y la Información para la Política de la Organización Mundial de la Salud. El Dr. Frenk se convirtió en el sexto presidente de la Universidad de Miami en agosto de 2015.</p>',
+			social: {
+				linkedin: '#'
+			}
+		},
+		{
+			title: 'Advisory Board',
+			name: 'Raymond McCauley',
+			area: 'S&TABM',
+			description: 'Raymond McCauley es un científico, ingeniero y empresario que trabaja a la vanguardia de la biotecnología. Raymond explora cómo la aplicación de la tecnología a la biología, la genética, la medicina y la agricultura está afectando a cada uno de nosotros. Raymond es Presidente de la Biotech Track de Singularity University, un grupo de reflexión de Silicon Valley dedicado a capacitar a los líderes sobre tecnologías exponenciales. Es Cofundador y Arquitecto en Jefe de BioCurious, también forma parte del equipo que desarrolló la secuenciación de ADN de próxima generación en Illumina, donde trabajó en bioinformática, secuenciación del cáncer y genómica personal.<p>Su obra y su historia han sido publicadas en Wired, Forbes, Time y Nature. El trabajo de posgrado de Raymond incluye estudios en Texas A & M University, Stanford y UC Berkeley en ingeniería eléctrica, informática, biofísica, bioquímica, bioinformática y nanotecnología. Raymond desarrolla y asesora a una variedad de empresas y organizaciones, incluyendo Genomera (pruebas clínicas de la muchedumbre), Vecoy Nanomedicines (plataforma de antivirus de biología sintética), Androcyte (investigación de longevidad) y Nanokit (origami de ADN).</p>',
+			social: {
+				linkedin: 'https://www.linkedin.com/in/raymondmccauley/'
+			}
 		}
 	];
 
@@ -70,10 +133,9 @@
 		var linkedin = '#js-hover-linkedin-' + $id;
 
 		$(linkedin).attr('href', team[$id].social.linkedin);
+		$('#js-hover-title').text(team[$id].title);
 		$('#js-hover-name').text(team[$id].name);
 		$('#js-hover-area').text(team[$id].area);
 		$('#js-hover-description').html(team[$id].description);
-	})
-
-
+	});
 })();
