@@ -17,11 +17,19 @@
   </head>
   <body>
     <div id="page">
-      {% include 'partials/navbar.njk' %}
+      {% if section == 'index' or section == 'eva' or section == 'about_us' or section == 'team' or section == 'allies' or section == 'news' or section == 'press' or section == 'contact' %}
+        {% include 'partials/navbar.njk' %}
+      {% else %}
+        {% include 'partials/navbar-es.njk' %}
+      {% endif %}
       <main>
         {% block content %}{% endblock %}
       </main>
-      {% include 'partials/footer.njk' %}
+      {% if section == 'index' or section == 'eva' or section == 'about_us' or section == 'team' or section == 'allies' or section == 'news' or section == 'press' or section == 'contact' %}
+        {% include 'partials/footer.njk' %}
+      {% else %}
+        {% include 'partials/footer-es.njk' %}
+      {% endif %}
     </div>
     {% block js_libs_config %}
     {% endblock %}

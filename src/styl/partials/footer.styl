@@ -1,6 +1,6 @@
 .site-footer
   background radial-gradient(ellipse at center, #4c4c4c 70%,#424242 100%)
-  padding 110px 0 107px 0
+  padding 110px 0 107px
   text-align center
 
 .eva-view.site-footer
@@ -10,17 +10,17 @@
   margin-bottom 31px
 
 .footer-section_three
-  margin-bottom 33px  
+  margin-bottom 33px
 
 .footer-title
-  font-size remify(21px)
+  rfont-size(21px, 500px, 16px)
   color #fff
   margin 0
 
 .social_media
   margin-right 15px
-  
-  &:last-child
+
+  &[alt="Twitter"]
     margin-right 0
 
 .footer-nav_menu
@@ -30,13 +30,47 @@
 
 .nav_item
   display inline-block
-  font-size remify(13px)
+  rfont-size(13px, 500px, 11px)
   letter-spacing .1px
   margin-right 15px
-  
+
+  & a,
+  & a:active,
+  & a:visited
+    color #fff
+    transition 0.2s color ease-in-out
+
   &:last-child
     margin-right 0
+
+  & a:hover
+    color #bdbdbd
 
 .footer-copy
   font-size remify(11px)
   color #fff
+
+@media screen and (max-width 500px)
+  .site-footer
+    padding 52px 0 50px
+  
+  .footer-section_one
+    margin-bottom 20px
+
+  .footer-section_two
+    margin-bottom 20px
+  
+  .social_media
+    width 17px
+    margin-right 10px
+
+  .footer-section_three
+    max-width 175px
+    center-block()
+    margin-bottom 9px
+  
+  .nav_item:nth-child(4)
+    margin-right 0
+  
+  .nav_item
+    margin-bottom 11px

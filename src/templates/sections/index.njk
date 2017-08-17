@@ -4,6 +4,17 @@
 {% endblock %}
 
 {% block content %}
+  <div class="gtkub-bg video-hidden" id="gtkub-bg">
+    <div class="gtkub-container">
+      <video width="100%" id="gtkub-video">
+        <source src="img/video/higiatech.mp4" type="video/mp4" class="gtkub-video">
+        <track src="img/video/higiatech-subtitles-en.vtt" kind="subtitles" srclang="en" label="English" default>
+      </video>
+      <div class="gtkub-close" id="gtkub-close">
+        <img src="img/navbar-mobile/close.png" alt="">
+      </div>
+    </div>
+  </div>
   <div id="home-a-particles-container" class="particles-container">
     <div class="absolute-container" id="absolute-container-a">
       <div class="lines-container">
@@ -57,7 +68,9 @@
             </a>
           </div>
           <div class="facts">
-            <h2 class="facts-title higia-font-helveticaneue-bold">Facts</h2>
+            <div class="facts-title-container">
+              <h2 class="facts-title higia-font-helveticaneue-bold">Facts</h2>
+            </div>
             <div class="facts-content">
               <div class="fact">
                 <div class="fact-content">
@@ -101,64 +114,63 @@
           <div class="section_two-title_divider"></div>
           <h3 class="section_two-subtitle higia-font-helveticaneue-thin">The Auto-Exploration Bra</h3>
         </div>
-        <p class="section_two-description higia-font-helveticaneue-thin">Breast Cancer detection bra equipped with tactile sensors to map the surface of the breast and surrounding areas, along with:</p>
+        <p class="section_two-description higia-font-helveticaneue-thin"><span class="description-bold higia-font-helveticaneue-bold">Breast Cancer detection wearable</span>  equipped with thermal sensors to map abnormal patterns inside the breast, along with:</p>
         <ul class="section_two-features">
-          <li class="feature higia-font-helveticaneue-medium">Color</li>
-          <li class="feature higia-font-helveticaneue-medium">Temperature</li>
-          <li class="feature higia-font-helveticaneue-medium">Texture</li>
-        </ul>
-        <div id="hidden-description" class="hidden-description">
-          <p class="hidden-description-content higia-font-helveticaneue-thin"><span class="description-bold higia-font-helveticaneue-bold">Breast Cancer detection wearable</span>  equipped with thermal sensors to map abnormal patterns inside the breast, along with:</p>
-          <ul class="section_two-features">
           <li class="feature higia-font-helveticaneue-medium">Temperature</li>
           <li class="feature higia-font-helveticaneue-medium">Texture</li>
           <li class="feature higia-font-helveticaneue-medium">Tissue Elasticity</li>
         </ul>
+        <a href="eva.html">
+          <button id="section_two-mobile-button" class="higia-btn btn-pink higia-font-helveticaneue-normal">See more</button>
+        </a>
+        <div id="hidden-description" class="hidden-description">
+          <div class="eva-container">
+            <img id="eva" class="eva" src="img/eva/eva.png" alt="Eva">
+            <a href="eva.html">
+              <button class="article-button btn-pink higia-font-helveticaneue-medium">Read more</button>
+            </a>
+            <div class="eva-feature temp">
+              <div class="eva-feature-graph">
+                <div class="stroke-container">
+                  <div class="stroke"></div>
+                </div>
+                <div class="bubble-container">
+                  <div class="bubble">
+                    <div class="subbubble"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="eva-feature-name">Temperature</div>
+            </div>
+            <div class="eva-feature color">
+              <div class="eva-feature-graph color">
+                <div class="stroke-container">
+                  <div class="stroke"></div>
+                </div>
+                <div class="bubble-container">
+                  <div class="bubble">
+                    <div class="subbubble"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="eva-feature-name">Tissue Elasticity</div>
+            </div>
+            <div class="eva-feature text">
+              <div class="eva-feature-graph">
+                <div class="stroke-container">
+                  <div class="stroke"></div>
+                </div>
+                <div class="bubble-container">
+                  <div class="bubble">
+                    <div class="subbubble"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="eva-feature-name">Texture</div>
+            </div>
+          </div>
         </div>
-        <button id="eva-button" class="eva-button">
-        </button>
-        <div class="eva-container">
-          <img id="eva" class="eva" src="img/eva/eva.png" alt="Eva">
-          <div class="eva-feature temp">
-            <div class="eva-feature-graph">
-              <div class="stroke-container">
-                <div class="stroke"></div>
-              </div>
-              <div class="bubble-container">
-                <div class="bubble">
-                  <div class="subbubble"></div>
-                </div>
-              </div>
-            </div>
-            <div class="eva-feature-name">Temperature</div>
-          </div>
-          <div class="eva-feature color">
-            <div class="eva-feature-graph color">
-              <div class="stroke-container">
-                <div class="stroke"></div>
-              </div>
-              <div class="bubble-container">
-                <div class="bubble">
-                  <div class="subbubble"></div>
-                </div>
-              </div>
-            </div>
-            <div class="eva-feature-name">Color</div>
-          </div>
-          <div class="eva-feature text">
-            <div class="eva-feature-graph">
-              <div class="stroke-container">
-                <div class="stroke"></div>
-              </div>
-              <div class="bubble-container">
-                <div class="bubble">
-                  <div class="subbubble"></div>
-                </div>
-              </div>
-            </div>
-            <div class="eva-feature-name">Texture</div>
-          </div>
-        </div>
+        <button id="eva-button" class="eva-button"></button>
       </section>
     </div>
   </div>
@@ -186,15 +198,15 @@
       <div class="higia-slide one">
         <img src="img/home-slider/slide-2.png" alt="">
         <div class="slider-container-description">
-          <h3 class="slide-title higia-font-helveticaneue-bold">Global Student Entrepreneur Award</h3>
-          <p class="slide-description higia-font-helveticaneue-thin">Global Winner Competing  Against 51 Countries Everis Foundation Global Award</p>
+          <h3 class="slide-title higia-font-helveticaneue-bold">Global Award</h3>
+          <p class="slide-description higia-font-helveticaneue-thin">Everis Foundation</p>
         </div>
       </div>
       <div class="higia-slide one">
         <img src="img/home-slider/slide-3.png" alt="">
         <div class="slider-container-description">
-          <h3 class="slide-title higia-font-helveticaneue-bold">National First Place</h3>
-          <p class="slide-description higia-font-helveticaneue-thin">National Student Entrepreneur Award</p>
+          <h3 class="slide-title higia-font-helveticaneue-bold">Global Student Entrepreneur Award</h3>
+          <p class="slide-description higia-font-helveticaneue-thin">Global Winner Competing  Against 51 Countries</p>
         </div>
       </div>
       <div class="higia-slide one">
@@ -208,7 +220,7 @@
         <img src="img/home-slider/slide-5.png" alt="">
         <div class="slider-container-description">
           <h3 class="slide-title higia-font-helveticaneue-bold">Presidential Medal for Science and Entrepreneurship</h3>
-          <p class="slide-description higia-font-helveticaneue-thin">Recognized by Mexican President Lic. Enrique Peña Nieto for our work in early breast cancer detection</p>
+          <p class="slide-description higia-font-helveticaneue-thin">Recognized by Mexican President Lic. Enrique Pena Nieto for our work in early breast cancer detection.</p>
         </div>
       </div>
       <div class="higia-slide one">
@@ -221,8 +233,15 @@
       <div class="higia-slide one">
         <img src="img/home-slider/slide-7.png" alt="">
         <div class="slider-container-description">
-          <h3 class="slide-title higia-font-helveticaneue-bold">LATAM entrepreneurial success stories</h3>
-          <p class="slide-description higia-font-helveticaneue-thin">Featured in the Entrepreneurial Learning Initiative Ice House Book</p>
+          <h3 class="slide-title higia-font-helveticaneue-bold">Entrepreneurial Learning Initiative</h3>
+          <p class="slide-description higia-font-helveticaneue-thin">Featured in the Entrepreneurial Learning Initiative Ice House Book as one of LATAM entrepreneurial success stories</p>
+        </div>
+      </div>
+      <div class="higia-slide one">
+        <img src="img/home-slider/slide-8.png" alt="">
+        <div class="slider-container-description">
+          <h3 class="slide-title higia-font-helveticaneue-bold">National First Place</h3>
+          <p class="slide-description higia-font-helveticaneue-thin">National Student Entrepreneur Award</p>
         </div>
       </div>
     </div>
@@ -233,35 +252,57 @@
     <div class="section_five-container">
     <div class="section_five-content">
       <h2 class="section_five-title">Get to know us better</h2>
-      <button class="higia-btn btn-pink">Watch video</button>
+      <button class="higia-btn btn-pink" id="gtkub-button">Watch video</button>
     </div>
     </div>
   </section>
   <section class="section_six" id="section_six">
     <div class="articles">
       <div class="article">
-        <img src="img/articles/expansion.png" alt="" class="article-author expansion">
-        <p class="article-highlight higia-font-helveticaneue-lightitalic">“Si logras reducir las brechas de diagnóstico o prevenirlo, no solo reduces los costos de la institución sino que ayudas a millones de mujeres”</p>
-        <button class="article-button btn-pink higia-font-helveticaneue-medium">Read more</button>
+        <img src="img/articles/bbc.png" alt="" class="article-author bbc">
+        <p class="article-highlight higia-font-helveticaneue-lightitalic">“A bra that he says will be an early warning system for breast cancer symptoms”</p>
+        <a href="http://www.bbc.com/news/world-latin-america-39802629" target="_blank">
+          <button class="article-button btn-pink higia-font-helveticaneue-medium">Read more</button>
+        </a>
+        <a href="press.html">
+          <button class="read_all-button btn-gray">Read All</button>
+        </a>
       </div>
       <div class="article">
         <img src="img/articles/forbes.png" alt="" class="article-author forbes">
         <p class="article-highlight higia-font-helveticaneue-lightitalic">“El primer dispositivo portátil en la detección temprana del cáncer de mama”</p>
-        <button class="article-button btn-pink higia-font-helveticaneue-medium">Read more</button>
+        <a href="https://www.forbes.com.mx/a-sus-18-anos-un-mexicano-puede-revolucionar-la-deteccion-del-cancer-de-mama/" target="_blank">
+          <button class="article-button btn-pink higia-font-helveticaneue-medium">Read more</button>
+        </a>
+        <a href="press.html">
+          <button class="read_all-button btn-gray">Read All</button>
+        </a>
+      </div>
+      <div class="article">
+        <img src="img/articles/expansion.png" alt="" class="article-author expansion">
+        <p class="article-highlight higia-font-helveticaneue-lightitalic">“Si logras reducir las brechas de diagnóstico o prevenirlo, no solo reduces los costos de la institución sino que ayudas a millones de mujeres”</p>
+        <a href="http://expansion.mx/emprendedores/2017/03/29/wearable-mexicano-que-detecta-cancer-de-mama-sera-probado-en-el-imss" target="_blank">
+          <button class="article-button btn-pink higia-font-helveticaneue-medium">Read more</button>
+        </a>
+        <a href="press.html">
+          <button class="read_all-button btn-gray">Read All</button>
+        </a>
       </div>
       <div class="article">
         <img src="img/articles/eluniversal.png" alt="" class="article-author elun">
         <p class="article-highlight higia-font-helveticaneue-lightitalic">“Que las mujeres sepan que en un futuro existirá un método diferente para la detección”</p>
-        <button class="article-button btn-pink higia-font-helveticaneue-medium">Read more</button>
-      </div>
-      <div class="article">
-        <img src="img/articles/bbc.png" alt="" class="article-author bbc">
-        <p class="article-highlight higia-font-helveticaneue-lightitalic">“A bra that he says will be an early warning system for breast cancer symptoms”</p>
-        <button class="article-button btn-pink higia-font-helveticaneue-medium">Read more</button>
+        <a href="http://www.eluniversal.com.mx/articulo/periodismo-de-datos/2016/10/5/luchan-contra-el-cancer-de-mama" target="_blank">
+          <button class="article-button btn-pink higia-font-helveticaneue-medium">Read more</button>
+        </a>
+        <a href="press.html">
+          <button class="read_all-button btn-gray">Read All</button>
+        </a>
       </div>
     </div>
     <div class="articles-read_all">
-      <button class="read_all-button btn-gray">Read All</button>
+      <a href="press.html">
+        <button class="read_all-button btn-gray">Read All</button>
+      </a>
     </div>
   </section>
   <div id="home-b-particles-container" class="particles-container">
@@ -280,7 +321,7 @@
               <label for="name" class="label-placeholder">E-mail</label>
             </div>
             <div class="form-message"></div>
-            <div class="button-wrapper">
+            <div class="button-wrapper" id="button-wrapper">
               <button type="submit" class="newsletter-button btn-pink higia-font-helveticaneue-normal">Subscribe</button>
             </div>
             <div class="loader custom-loader">
