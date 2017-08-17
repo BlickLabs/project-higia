@@ -49,7 +49,8 @@
   flex-wrap wrap
   display flex
   justify-content flex-start
-  width 760px
+  //width 760px
+  width 625px
   height 700px
   overflow-y scroll
 
@@ -108,7 +109,8 @@
     height 20.9px
 
   & p
-    margin-top 56px
+    //margin-top 56px
+    margin-top 10px
     margin-bottom 2px
     font-size remify(18)
     line-height 21px
@@ -149,21 +151,40 @@
     height auto
     text-align center
 
+@media screen and (max-width: 12804px)
+
+  .team-photo-container
+    width 180px
+    height auto
+
 @media screen and (max-width: 1024px)
+
+  .team-photo-img p
+    line-height 15px
+    margin-top 4px
+    font-size 12px
+
+  .team-photo-img span
+    font-size 11px
+    line-height 10px
+
+  .team-photo-mask .team-social
+    margin-top .5rem
+
+  .team-photo-mask .team-social img
+    width 15px
+
+  .team-photo-container
+    width 142px
+    height 134px
+
   .team-our-team
     max-width 365.5px
 
   .team-photos
     max-width 495px
 
-@media screen and (max-width: 786px)
-  .team-photo-container
-    width 200px
-    height auto
-    margin-bottom 15px
-
-// start styles mobile version
-@media screen and (max-width: 414px)
+@media screen and (max-width: 876px)
   .team-line,
   .team-user,
   .team-social,
@@ -172,15 +193,21 @@
 
   .team-container
     padding-top 100px
+    padding-left 50px
+    padding-right 50px
     flex-direction column
     align-items center
 
   .team-photos
-    max-width 212px
+    padding-top 0
+    padding-left 0
+    overflow-y hidden
+    max-width 100%
+    //width 100%
 
   .team-photo-container
-    width 103px
-    height 99px
+    width 138px
+    height auto
     margin-bottom 3px
     margin-left 3px
     overflow hidden
@@ -199,6 +226,7 @@
 
   // styles for modal
   .remodal
+    margin-top 50px
     max-width 293px
     background-color transparent
     padding 0
@@ -264,3 +292,33 @@
 
     & a
       margin-right 9px
+
+@media screen and (max-width: 414px)
+
+  .team-photo-container
+    margin-right 0
+    margin-bottom 0
+
+  .team-title,
+  .team-photos .team-advisor
+    font-size 20px
+
+  .team-photos
+    height 100%
+    overflow-y scroll
+
+@media screen and (max-width: 375px)
+
+  .team-photo-container
+    width 125px
+
+@media screen and (max-width: 360px)
+
+  .team-photo-container
+    width 115px
+    margin-bottom 0
+
+@media screen and (max-width: 320px)
+
+  .team-photo-container
+    width 100px
