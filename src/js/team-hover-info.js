@@ -14,6 +14,7 @@
       name: 'Julián Rios',
       area: 'CEO',
       description_es: 'Mis principales tareas como Director ejecutivo de Higia Technologies consisten en cerciorarse de que la visión de la compañía sea la correcta, proveer los recursos necesarios para la creación de productos, construir la cultura corporativa, tomar las decisiones estratégicas para el óptimo funcionamiento de la empresa y supervisar el funcionamiento de la misma.<p>Actualmente, soy el primer y más jóven mexicano en ser galardonado con el Premio Global al Estudiante Emprendedor y la medalla Sol Azteca al emprendimiento por parte de la Presidencia de la República.</p>',
+      description: 'My main duties as Chief Executive Officer of Higia Technologies are to ensure that the company\'s vision is correct, provide the necessary resources for product creation, build the corporate culture, make strategic decisions for the optimal functioning of the company and supervise the operation of the same.<p>Currently, I am the first and youngest Mexican to be awarded the Global Entrepreneurial Student Award and the Sol Azteca medal to the initiative by the Presidency of the Republic.</p>',
       social: {
         linkedin: 'https://www.linkedin.com/in/juli%C3%A1n-r%C3%ADos-cant%C3%BA-903b76106'
       }
@@ -24,6 +25,7 @@
       name: 'Alejandro Casar',
       area: 'Co-AIO',
       description_es: 'Mi trabajo consiste supervisar las áreas de inteligencia artificial y desarrollar algoritmos para la detección oportuna del pié diabético, cáncer de mama, cáncer testicular y prostático a partir de los datos obtenidos por nuestros productos.<p>Soy un graduado de Ingeniero en Sistemas  Digitales y Robótica del Tecnológico de Monterrey y, actualmente, estudio una maestría en inteligencia artificial haciendo investigación en algoritmos para detección de cáncer de mama.</p>',
+      description: 'My job is to supervise the areas of artificial intelligence and develop algorithms for the timely detection of diabetic foot, breast cancer, testicular and prostate cancer based on the data obtained by our products. <p>I am a graduate of Digital Systems and Robotics Engineer at Tecnológico de Monterrey and I am currently studying a master\'s degree in artificial intelligence doing research on algorithms for detecting breast cancer.</p>',
       social: {
         linkedin: 'https://www.linkedin.com/in/alexcasar/'
       }
@@ -34,6 +36,7 @@
       name: 'Raymundo González',
       area: 'Co-AIO',
       description_es: 'Mi trabajo consiste supervisar las áreas de inteligencia artificial y desarrollar algoritmos para la detección oportuna del pié diabético, cáncer de mama, cáncer testicular y prostático a partir de los datos obtenidos por nuestros productos.<p>Soy un estudiante de Ciencias Computacionales y estadística en Minerva Schools KGI. En el pasado, he fungido como pasante investigador en Audible, compañía de Amazon, y colaborador en proyectos de investigación en el Laboratorio de Inteligencia Artificial de la Universidad de Stanford.</p>',
+      description: 'My job is to supervise the areas of artificial intelligence and develop algorithms for the timely detection of diabetic foot, breast cancer, testicular and prostate cancer based on the data obtained by our products.<p>I am a student of Computer Science and Statistics at Minerva Schools KGI. In the past, I have served as a research intern at Audible, an Amazon company, and a research collaborator at the Stanford University Artificial Intelligence Laboratory.</p>',
       social: {
         linkedin: 'https://www.linkedin.com/in/raymundo-gzz/'
       }
@@ -44,6 +47,7 @@
       name: 'Fernando López',
       area: 'DSF',
       description_es: 'En Higia funjo como director del área de software, desde la parte orientada al cliente hasta el servidor en nuestra aplicación y sitio web.<p>También es mi deber detectar e implementar nuevas tecnologías para integrar en nuestro desarrollo con el objetivo de mejorar nuestros productos.</p>',
+      description: 'In Higia, I work as director of the software area, from the client-side to the server in our application and website.<p>It is also my duty to detect and implement new technologies to integrate into our development with the aim of improving our products.</p>',
       social: {
         linkedin: 'https://www.linkedin.com/in/fernando-l%C3%B3pez-mart%C3%ADnez-774823111/'
       }
@@ -54,6 +58,7 @@
       name: 'Antonio Torres',
       area: 'CTO',
       description_es: 'Mi trabajo consiste en mirar hacia el futuro antes de que suceda. Tratar de arriesgarse y tomar decisiones innovadoras que lleven a la empresa a una posición más valiosa en el corto y largo plazo.<p>Soy el encargado de supervisar las áreas de tecnología y que nuestros productos y servicios cuenten con la calidad esperada.</p>',
+      description: 'My job is to look into the future before it happens. Try to take risks and make innovative decisions that take the company to a more valuable position in the short and long term.<p>I am in charge of supervising the areas of technology and that our products and services have the expected quality.</p>',
       social: {
         linkedin: 'https://www.linkedin.com/in/jantoniotorres/'
       }
@@ -64,6 +69,7 @@
       name: 'José Ángel Lavariega',
       area: 'CINO',
       description_es: 'Como Jefe de Innovación es mi deber asegurarme que nuestros procesos sean innovadores, permanezcan realistas y que sigamos una rigor profesional y científico en nuestras publicaciones, investigaciones y prototipos.<p>En las primeras etapas de nuestra compañía me he dedicado a realizar profundas investigaciones de mercado y asegurarme de que la tecnología implementada en nuestro producto sea la correcta.</p>',
+      description: 'As Head of Innovation it is my duty to ensure that our processes are innovative, remain realistic and that we follow a professional and scientific rigor in our publications, research and prototypes.<p>In the early stages of our company I have been dedicated to deep market research and to ensure that the technology implemented in our product is correct.</p>',
       social: {
         linkedin: 'https://www.linkedin.com/in/jose-angellavariegagomez/'
       }
