@@ -68,7 +68,7 @@
   flex-direction column
   justify-content space-between
   transition .3s transform ease
-  
+
   &.hidden
     transform translateX(-70px)
 
@@ -79,7 +79,7 @@
   align-items center
   width 50px
   cursor pointer
-  
+
   &:hover
     .line
       width 75%
@@ -91,7 +91,7 @@
   height 1px
   background #979797
   transition .25s width ease
-  
+
   &.active
     width 100%
     background-color #ea8193
@@ -161,7 +161,7 @@
   transition .2s transform ease-in-out
   &:hover
     transform scale(1.1)
-    
+
 .fact-content
   width 150px
 
@@ -183,15 +183,15 @@
 @keyframes lifePink
   from
     color #5e5e5e
-  
+
   to
     color #ee9bbe
 
 //*************** section_two ***************//
-.section_two  
+.section_two
   padding 1px 1px 67.5px 1px
   text-align center
-  
+
 .section_two-title_container
   center-block()
   display flex
@@ -230,7 +230,7 @@
   padding 0
   text-align center
   margin 0 0 20px 0
-  
+
   .feature
     display inline-block
     color #4b4b4b
@@ -239,10 +239,10 @@
     padding-right 13px
     padding-left 10px
     letter-spacing 2.3px
-    
+
     &:nth-child(1), &:nth-child(2)
       border-right 2px solid #4b4b4b
-  
+
   .feature-divider
     background-color #4b4b4b
     width 2px
@@ -257,7 +257,7 @@
   height 0
   transition .75s height ease
   margin 0 0 35px 0
-  
+
   &.active
     padding-top 50px
     height 500px
@@ -304,17 +304,17 @@
   display flex
   width 270px
   position absolute
-  
+
   &.temp
     top 125px
     left 95%
-    
+
     .stroke
       animation-delay .2s
-    
+
     .bubble
       animation-delay 1.2s
-    
+
     .eva-feature-name
       animation-delay 1.9s
 
@@ -322,30 +322,30 @@
     flex-direction row-reverse
     top 240px
     right 95%
-    
+
     .stroke-container
       display flex
       justify-content flex-end
-    
+
     .stroke
       animation-delay 2.8s
-    
+
     .bubble
       animation-delay 3.2s
-    
+
     .eva-feature-name
       animation-delay 4.1s
-  
+
   &.text
     bottom 85px
     left 90%
-    
+
     .stroke
       animation-delay 5s
-    
+
     .bubble
       animation-delay 5.6s
-    
+
     .eva-feature-name
       animation-delay 6.2s
 
@@ -353,6 +353,7 @@
   display flex
   align-items center
   margin-right 15px
+  margin-bottom 42px
 
   &.color
     flex-direction row-reverse
@@ -372,7 +373,7 @@
   animation eva-stroke .5s
   animation-fill-mode forwards
   animation-timing-function ease
-  
+
 .bubble-container
   width 17px
   height 17px
@@ -416,17 +417,17 @@
 @keyframes eva-stroke
   0%
     width 0
-  
+
   100%
     width 100%
 
 @keyframes eva-bubble
   0%
     transform scale(0)
-  
+
   66%
     transform scale(1.1)
-  
+
   100%
     transform scale(1)
 
@@ -456,7 +457,7 @@
 
 .section_three-title
   color #4b4b4b
-  rfont-size(34px, 500px, 21px)
+  rfont-size(28px, 500px, 21px)
   letter-spacing .1px
   margin 0 0 10px 0
 
@@ -487,10 +488,10 @@
   text-align center
   outline 0
   padding 45px 0
-  
+
   h3, p
     opacity 0
-  
+
   img
     width 150px
     center-block()
@@ -504,14 +505,14 @@
     text-align center
     top 100%
     left -43%
-    
+
   img
     transform scale(1.5)
     z-index 15
     border-radius 50%
     box-shadow 0px 3px 6px 0px rgba(0,0,0,0.6)
     border 0
-    
+
   h3, p
     opacity 1
 
@@ -530,7 +531,7 @@
   background transparent
   border 0
   position relative
-  
+
 .arrow-right
   right -50px
 
@@ -593,9 +594,9 @@
   rfont-size(34px, 500px, 21px)
   color #4b4b4b
   margin 0 0 30px 0
-  
+
 .section_five
-  .higia-btn  
+  .higia-btn
     padding 12px 15px
 
 @keyframes circuit-opacity
@@ -619,7 +620,7 @@
 .article
   width 370px
   margin-bottom 84px
-  
+
   .read_all-button
     display none
 
@@ -627,13 +628,13 @@
   margin 0 0 30px 0
   &.expansion
     height 27px
-  
+
   &.forbes
     height 26px
-  
+
   &.elun
     height 26px
-  
+
   &.bbc
     height 31px
 
@@ -679,7 +680,7 @@
 
 .section_seven-title
   margin 0 0 20px 0
-  rfont-size(54px, 500px, 21px)
+  rfont-size(50px, 500px, 21px)
   color #4b4b4b
   letter-spacing .1px
 
@@ -734,15 +735,15 @@
   .facts
     flex-direction column
     justify-content center
-  
+
   .facts-title-container
     margin-bottom 40px
-  
+
   .facts-title
     margin 0
     text-align center
-  
-  .facts-content 
+
+  .facts-content
     justify-content center
     .fact
       &:first-child
@@ -751,14 +752,14 @@
 @media (min-width 1020px)
   .section_one
     height 100vh
-  
+
   .section_one-container
     height 100%
     display flex
     flex-direction column
     justify-content center
     align-items center
-  
+
   .section_one-content
     margin 0
     max-width 708px
@@ -771,10 +772,10 @@
 @media (max-width 1020px)
   .facts-content
     max-width 600px
-  
+
   .fact
     margin-bottom 40px
-  
+
     &:nth-child(3)
       margin-left 0
 
@@ -793,34 +794,34 @@
 @media (max-width 550px)
   .section_one-content
     margin-bottom 61px
-  
+
   .facts-content
     max-width 287px
 
   .fact
     flex-direction column-reverse
     align-items flex-start
-  
+
   .fact-icon
     text-align left
     margin-bottom 15px
-  
+
   .section_one-mask img
     height 230px
-  
+
   .section_one-content
     margin-top 116px
-  
+
   .section_one-title
     width 222px
     margin-bottom 16px
-  
+
   .facts-content
     justify-content space-between
-  
+
   .fact
     margin-left 0
-  
+
   .fact-content
     width 136px
 
@@ -828,82 +829,82 @@
   .section_one
     margin-bottom 11px
 
-  .section_five .higia-btn 
+  .section_five .higia-btn
     padding 12px 20px
-    
+
   .section_two
     padding-bottom 0
-  
+
   .section_two-title_container
     flex-direction column
     margin-bottom 26px
-  
+
   .section_two-title
     margin 0 0 11px 0
-  
+
   .section_two-title_divider
     width 22px
     height 1px
-  
+
   #section_two-mobile-button
     display inline-block
-  
+
   .section_two-subtitle
     margin 11px 0 0
-  
+
   .section_two-description
     width 244px
-    
+
   .eva-container
     width 182px
-  
-  .section_two-features 
+
+  .section_two-features
     margin-bottom 40px
     .feature:nth-child(1), .feature:nth-child(2)
       border-right 1px solid #4b4b4b
-  
+
   .section_two-mobile-button
     display block
-  
+
   .hidden-description
     padding-top 84px
     height 330px
-  
+
   .eva-container
     .eva
       width 182px
-  
+
   .eva-feature.temp
     top 10px
     left 95%
-    
+
   .eva-feature.color
     flex-direction row-reverse
     top 158px
     right 95%
-    
+
     .stroke-container
       width 18px
-    
+
     .eva-feature-name
       width 60px
-    
+
     .eva-feature-graph
       margin-left 6px
-  
+
   .eva-feature.text
     bottom 35px
     left 98%
-    
+
     .stroke-container
       width 18px
-  
+
   .eva-feature-graph
     margin-right 7px
-  
+
   .stroke-container
     width 10px
-  
+
   .bubble-container
     width 9px
     height 9px
@@ -911,17 +912,17 @@
   .bubble
     width 9px
     height 9px
-  
+
   .subbubble
     width 2.5px
     height 2.5px
-  
+
   .eva-feature-name
     letter-spacing 1.3px
     display flex
     justify-content center
     align-items center
-  
+
   #eva-button
     display none
 
@@ -933,65 +934,65 @@
     background-image url('../img/backgrounds/section-3-mobile.png')
     background-position center bottom
     background-size cover
-  
+
   .section_three-container
     width 188px
     text-align center
-  
+
   .section_three-description
     margin-bottom 18px
-  
+
   .section_four
     height 420px
     padding-top 63px
 
   .section_four-slider-container
     max-width 260px
-  
+
   .section_four-title
     margin-top 0
-  
+
   .higia-slide
     img
       width 70px
-  
+
   .arrow-right
     right -30px
 
   .arrow-left
     left -30px
-  
-  .higia-slide.slick-current 
+
+  .higia-slide.slick-current
     .slider-container-description
       left -95%
       width 200px
-  
+
   .slide-description
     width 100%
-  
+
   .arrow
     padding-bottom 330px
-  
+
   .section_five
     height 63vw
     background-color transparent
-  
+
   .circuit-mask
     background-image none
-  
+
   .cupper-thing
     background-image none
 
   .section_five-container
     width 55%
     left initial
-  
+
   .section_five-content
     margin-right 32.5%
-  
+
   .section_five-title
     margin-bottom 16px
-  
+
   .buttont
     background-color transparent
     border 0
@@ -999,56 +1000,56 @@
   .articles
     max-width 233px
     text-align center
-    
+
     .buttont-l
       right 115%
       top 40%
-    
+
     .buttont-r
       left 110%
       top 40%
-  
+
   .article
     margin-bottom 0
     outline 0
-  
+
     .read_all-button
       display inline
-  
+
   .article-highlight
     height 60px
-  
+
   .article-author
     center-block()
-    
+
   .article-button
     margin-right 14px
-  
+
   .read_all-button
     padding 10px 25px
-  
+
   .articles-read_all
-    
+
     .read_all-button
       display none
 
   .section_seven
     padding 82px 0 85px
-  
+
   .section_seven-container
     max-width 235px
     center-block()
-  
+
   .section_seven-title
     margin-bottom 17px
-  
+
   .section_seven-subtitle
     margin-bottom 30px
     line-height 1.24
-  
+
   .input-wrapper
     margin-bottom 40px
-  
+
   #button-wrapper
     padding 0
 
