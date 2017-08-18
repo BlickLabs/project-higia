@@ -60,18 +60,10 @@
   &:nth-child(9) .ally
       width 54px
 
-@media screen and (max-width: 360px)
-
-  .allies-container
-    padding-top 150px
-
-  .ally-wrapper
-    width 130px !important
-
 @media screen and (max-width: 768px)
 
   .allies-container
-    padding-top 150px
+    padding-top 100px
 
   .allies-wrapper
     padding-right 20px
@@ -79,29 +71,151 @@
 
   .ally-wrapper
     width 210px
+    box-shadow 0 3px 8px 0 rgba(200,205,205,0.5)
 
-@media screen and (max-width: 414px)
+    &:nth-child(1)
+      order 1
+
+    &:nth-child(2)
+      order 2
+
+    &:nth-child(3)
+      order 7
+
+    &:nth-child(4)
+      order 3
+
+    &:nth-child(5)
+      order 4
+
+    &:nth-child(6)
+      order 9
+
+    &:nth-child(7)
+      order 5
+
+    &:nth-child(8)
+      order 6
+
+    &:nth-child(9)
+      order 8
+
+@media screen and (max-width: 360px)
 
   .allies-container
-    padding-top 150px
+    padding-top 100px !important
+
+  .allies-title
+    margin 0px 0 50px 0
 
   .allies-wrapper
-    justify-content center
+    justify-content space-between
+    max-width 252px
+
+  .ally-wrapper
+    border-radius 2px
+    margin-bottom 9px
+    width 101px !important
+    height 93px
+    box-shadow 1px 1px 10px #fafafa
+
+    &:nth-child(1)
+      order 1
+
+    &:nth-child(2)
+      order 2
+
+    &:nth-child(3)
+      order 7
+
+    &:nth-child(4)
+      order 3
+
+    &:nth-child(5)
+      order 4
+
+    &:nth-child(6)
+      order 9
+
+    &:nth-child(7)
+      order 5
+
+    &:nth-child(8)
+      order 6
+
+    &:nth-child(9)
+      order 8
+
+    &:nth-child(1) .ally
+        width 40px
+
+    &:nth-child(2) .ally
+        width 56px
+
+    &:nth-child(3) .ally
+        width 55px
+
+    &:nth-child(4) .ally
+        width 34px
+
+    &:nth-child(5) .ally
+        width 50px
+
+    &:nth-child(6) .ally
+        width 80px
+
+    &:nth-child(7) .ally
+        width 40px
+
+    &:nth-child(8) .ally
+        width 80px
+
+    &:nth-child(9) .ally
+        width 30px
+
+@media (min-width: 361px) and (max-width: 414px)
+
+  .allies-container
+    padding-top 100px
+
+  .allies-wrapper
+    width 329px
+    justify-content space-between
     flex-wrap wrap
     align-items center
 
   .ally-wrapper
     width 140px
-    height 93.9px
-    margin-bottom 55px
+    height 130px
+    margin-bottom 10px
+    box-shadow 0 3px 8px 0 rgba(200,205,205,0.5)
 
-    &:nth-child(even)
-      margin-right 20px
-      margin-left 4.5px
+    &:nth-child(1)
+      order 1
 
-    &:nth-child(odd)
-      margin-left 20px
-      margin-right 4.5px
+    &:nth-child(2)
+      order 2
+
+    &:nth-child(3)
+      order 7
+
+    &:nth-child(4)
+      order 3
+
+    &:nth-child(5)
+      order 4
+
+    &:nth-child(6)
+      order 9
+
+    &:nth-child(7)
+      order 5
+
+    &:nth-child(8)
+      order 6
+
+    &:nth-child(9)
+      order 8
 
     &:nth-child(6) .ally
-        width 120px
+      width 120px
