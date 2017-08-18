@@ -7,7 +7,7 @@ $('.section-press-carousel').slick({
   nextArrow: '<img class="slick-next" src="img/slider-arrow/right.svg">',
   responsive: [
     {
-      breakpoint: 414,
+      breakpoint: 416,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
