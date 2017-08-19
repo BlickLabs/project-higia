@@ -108,20 +108,29 @@
   left 0
   bottom 0
   right 0
-  pointer-events none
+  //pointer-events none
 
 .section_one-mask-container
   max-width 1000px
-  text-align right
+  text-align left
   padding 0 44px
-  margin 132px auto 0
+  margin 132px 22px 0
 
 .section_one-mask img
-  height 390px
+  filter grayscale(1)
+  height 377px
+
+.logoPink
+  filter grayscale(0) !important
+  transition filter .8s ease
 
 .section_one-content
   max-width 708px
-  padding 0 37px
+  //padding 0 37px
+  max-width 100%
+  padding-top 43px
+  padding-left 642px
+  padding-right 61px
   margin 208px auto 152px
 
 .section_one-title
@@ -749,25 +758,25 @@
       &:first-child
         margin-left 0
 
-@media (min-width 1020px)
-  .section_one
-    height 100vh
-
-  .section_one-container
-    height 100%
-    display flex
-    flex-direction column
-    justify-content center
-    align-items center
-
-  .section_one-content
-    margin 0
-    max-width 708px
-    padding 0 37px
-    display flex
-    height calc(100% - 182px)
-    justify-content center
-    flex-direction column
+// @media (min-width 1020px)
+//   .section_one
+//     height 100vh
+//
+//   .section_one-container
+//     height 100%
+//     display flex
+//     flex-direction column
+//     justify-content center
+//     align-items center
+//
+//   .section_one-content
+//     margin 0
+//     max-width 708px
+//     padding 0 37px
+//     display flex
+//     height calc(100% - 182px)
+//     justify-content center
+//     flex-direction column
 
 @media (max-width 1020px)
   .facts-content
