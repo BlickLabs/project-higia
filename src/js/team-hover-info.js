@@ -150,16 +150,36 @@
       social: {
         linkedin: 'https://www.linkedin.com/in/raymondmccauley/'
       }
+    },
+    {
+      title: title_ab,
+      title_es: title_ab_es,
+      name: 'Isaac Lekach',
+      area: 'S&TABM',
+      description: 'Isaac Lekach is a private investor and advisor for companies based primarily in the United States and Mexico with a focus in the fields of marketing, consulting, real estate, finance, consumer goods and fashion. Isaac graduated in 2001 from NYU\'s Stern School of Business with degrees in Marketing, International Business and Management.<p>After working in New York for Advest in ​​Fixed Income Institutional Sales and Trading, Isaac moved to Mexico in 2003 to create a distribution platform for the groups’ diverse products in the country and repeated the task again in 2005/06 in Brazil. Over the past 12 years his company was responsible for the successful launches and distribution of numerous fragrance lines including Perry Ellis, Paris Hilton (including footwear), Guess, Maria Sharapova, XOXO, Ocean Pacific and more recently, Katy Perry, Ed Hardy, True Religion, BCBG, Selena Gomez and others.  The fragrance businesses were sold successfully in 2012/13. Isaac has mentored and coached over fifty companies in his lifetime and is active mentor and coach for Endeavor, Ashoka, Masschallenge, Victoria 147, Posible, Unreasonable Institute and EO-Accelerator in Mexico. At present, he manages investments in real estate and various startups, has cofounded a consulting firm and is also an investor and advisor to Dream Water (drinkdreamwater.com) and Artcan (artcangroup.com) both based in the US.</p>',
+      social: {
+        linkedin: '/'
+      }
+    },
+    {
+      title: title_ab,
+      title_es: title_ab_es,
+      name: 'Erick Ponce',
+      area: 'S&TABM',
+      description: 'Erick Ponce has worked for more than 15 years in the health sector, both public and private, where he has been dedicated to promoting the individualization of medicine and the revaluation of both the doctor and the patient.<p>After finishing his Philosophy studies at La Salle University in Mexico City, he lived in Santiago de Chile, where he became acquainted with the world of Startups, digital markets, and in particular health technology. In 2004 he founded Fadermex, a leading company in Pharma Technology (personalization of the medical prescription) and now also with scope in clinical research and drug-surveillance.</p>',
+      social: {
+        linkedin: '/'
+      }
     }
   ];
 
   // Set by default the description of element 0, in this case "Julian"
-  if (location.pathname === '/team-es.html') {
+  if (location.pathname === '/team-es.html' || location.pathname === '/project-higia/team-es.html') {
     $('#js-hover-title').html(team[0].title_es);
     $('#js-hover-name').html(team[0].name);
     $('#js-hover-area').html(team[0].area);
     $('#js-hover-description').html(team[0].description_es);
-  } else if (location.pathname === '/team.html') {
+  } else if (location.pathname === '/team.html' || location.pathname === '/project-higia/team.html') {
     $('#js-hover-title').html(team[0].title);
     $('#js-hover-name').html(team[0].name);
     $('#js-hover-area').html(team[0].area);

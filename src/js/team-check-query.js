@@ -1,7 +1,7 @@
 (function() {
 
 	// Function to check if it is on mobile and activate the modals or visiversa.
-	var mediaquery = window.matchMedia("(max-width: 414px)");
+	var mediaquery = window.matchMedia("(max-width: 876px)");
 	var team = $('.team-photo-img');
 
 	// Removes the activation of the modals if it opens in the desktop.
