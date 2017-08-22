@@ -1,13 +1,19 @@
 (function() {
 
   var mediaquery = window.matchMedia("(max-width: 876px)");
-  var el = '.team-our-team';
+  var el = $('.team-our-team');
 
-  function checkTeam() {
+  if (!mediaquery.matches) {
+    el.sticky({
+      topSpacing: 126
+    })
+  }
+
+  function checkTeam(mediaquery) {
     if (mediaquery.matches) {
-      $(el).unsticky();
+      el.unsticky();
     } else {
-      $(el).sticky({
+      el.sticky({
         topSpacing: 126
       })
     }
