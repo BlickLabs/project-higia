@@ -17,7 +17,6 @@
 
 .nav-white-bg
   background-color #fff
-  box-shadow 0 2px 9px 0 rgba(0, 0, 0, 0.14)
   height 100px
 
 .nav-transparent-bg
@@ -92,7 +91,8 @@
     color #4c4c4c
 
 // display none, in not version mobile
-.site-navbar-icon-close
+.site-navbar-icon-close,
+.site-navbar-lang
   display none
 
 @media screen and (max-width: 876px) // Change
@@ -174,13 +174,28 @@
     &:hover
       color #e1e1e1
 
-.site-navbar-icon-close
-  display inline-block
-  position absolute
-  top 43px
-  right 33px
-  width 15px
-  height 15px
+  .site-navbar-icon-close
+    display flex
+    justify-content space-between
+    align-items center
+    position absolute
+    top 43px
+    right 33px
+    width 15px
+    height auto
+    width 70%
 
-  & img
-    width 100%
+    & img
+      width 15px
+      height auto
+
+  .site-navbar-lang
+    text-transform uppercase
+    width 4rem
+    display flex
+    justify-content space-between
+    color #e1e1e1
+
+    & a:active,
+    & a:visited
+      color #e1e1e1

@@ -1,8 +1,16 @@
 (function() {
 
 	// Function to check if it is on mobile and activate the modals or visiversa.
-	var mediaquery = window.matchMedia("(max-width: 414px)");
+	var mediaquery = window.matchMedia("(max-width: 876px)");
 	var team = $('.team-photo-img');
+	var teamUser = [
+		'julian',
+		'alejandro',
+		'raymundo',
+		'fernando',
+		'antonio',
+		'jose'
+	];
 
 	// Removes the activation of the modals if it opens in the desktop.
 	if (!mediaquery.matches) {
@@ -12,17 +20,7 @@
 	}
 
 	// A manager is added to check the width of the screen
-	function handleOrientationChange(mediaquery) {
-
-		var teamUser = [
-			'julian',
-			'alejandro',
-			'raymundo',
-			'fernando',
-			'antonio',
-			'jose'
-		];
-
+	function handleOrientationChange(mediaquery, teamUser) {
 	  if (mediaquery.matches) {
 			team.each(function (index, value) {
 				value.setAttribute('data-remodal-target', teamUser[index])

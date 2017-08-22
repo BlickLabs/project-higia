@@ -1,0 +1,381 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Team
+{% endblock %}
+
+{% block content %}
+  <div class="team-container">
+    <div class="team-our-team">
+      <div class="team-title-container">
+        <p class="higia-font-helveticaneue-bold team-title"><span id="js-hover-title"></span></p>
+        <span class="team-line"></span>
+      </div>
+      <p class="higia-font-helveticaneue-normal team-user">
+        <span class="higia-font-helveticaneue-bold">
+          <span id="js-hover-name"></span></span> | <span id="js-hover-area"></span>
+      </p>
+      <p class="higia-font-helveticaneue-thin team-descrip">
+        <span id="js-hover-description"></span>
+      </p>
+    </div>
+    <div class="team-photos">
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="julian" data-hover-id="0" data-lang="es">
+          <img src="img/team/team1.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Julián Rios</p>
+            <span class="higia-font-helveticaneue-normal">Chief Executive Officer</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-0" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="alejandro" data-hover-id="1" data-lang="es">
+          <img src="img/team/team2.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Alejandro Casar</p>
+            <span class="higia-font-helveticaneue-normal">Co-Artificial Intelligence Officer (Co-AIO)</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-1" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="raymundo" data-hover-id="2" data-lang="es">
+          <img src="img/team/team3.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Raymundo González</p>
+            <span class="higia-font-helveticaneue-normal">Co-Artificial Intelligence Officer (Co-AIO)</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-2" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="fernando" data-hover-id="3" data-lang="es">
+          <img src="img/team/team4.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Fernando López</p>
+            <span class="higia-font-helveticaneue-normal">Director of Software Engineering</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-3" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="antonio" data-hover-id="4" data-lang="es">
+          <img src="img/team/team5.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Antonio Torres</p>
+            <span class="higia-font-helveticaneue-normal">Chief Technology Officer (CTO)</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-4" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="jose" data-hover-id="5" data-lang="es">
+          <img src="img/team/team6.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">José Ángel Lavariega</p>
+            <span class="higia-font-helveticaneue-normal">Chief Innovation Officer (CINO)</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-5" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="martin" data-hover-id="6" data-lang="es">
+          <img src="img/team/martin.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Martín Urtíz</p>
+            <span class="higia-font-helveticaneue-normal">Artificial Intelligence Developer</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-6" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="rebeca" data-hover-id="7" data-lang="es">
+          <img src="img/team/rebecca.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Rebecca Canales</p>
+            <span class="higia-font-helveticaneue-normal">Software Architecture Intern</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-7" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="jose" data-hover-id="8" data-lang="es">
+          <img src="img/team/vicente.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Vicente Ferrara</p>
+            <span class="higia-font-helveticaneue-normal">Hardware Development Intern</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-8" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="higia-font-helveticaneue-bold team-title team-advisor">Consejo Asesor</p>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="ta-antonio" data-hover-id="9" data-lang="es">
+          <img src="img/team/antonioRallo.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Antonio Rallo</p>
+            <span class="higia-font-helveticaneue-normal">Science and Technology Advisory Board Members</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-9" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="ta-felicia" data-hover-id="10" data-lang="es">
+          <img src="img/team/felicia.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Felicia Knaul</p>
+            <span class="higia-font-helveticaneue-normal">Science and Technology Advisory Board Members</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-10" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="ta-julio" data-hover-id="11" data-lang="es">
+          <img src="img/team/julioFrenk.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Julio Frenk</p>
+            <span class="higia-font-helveticaneue-normal">Science and Technology Advisory Board Members</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-11" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="ta-raymond" data-hover-id="12" data-lang="es">
+          <img src="img/team/raymond.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Raymond McCauley</p>
+            <span class="higia-font-helveticaneue-normal">Science and Technology Advisory Board Members</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-12" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="ta-isaac" data-hover-id="13" data-lang="es">
+          <img src="img/team/isaacLekach.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Isaac Lekach</p>
+            <span class="higia-font-helveticaneue-normal">Science and Technology Advisory Board Members</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-13" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-photo-container">
+        <div class="team-photo-img" data-remodal-target="ta-ponce" data-hover-id="14" data-lang="es">
+          <img src="img/team/erickPonce.jpg">
+          <div class="team-photo-mask">
+            {# mascara al hacer hover #}
+            <p class="higia-font-helveticaneue-bold">Erick Ponce</p>
+            <span class="higia-font-helveticaneue-normal">Science and Technology Advisory Board Members</span>
+            <div class="team-social">
+              <a href="" id="js-hover-linkedin-14" target="_blank">
+                <img src="img/team/linkedin.svg" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {# start modalTeam #}
+  <div class="remodal" data-remodal-id="julian">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="modal-team">
+      <div class="modal-team--photo">
+        <img src="img/team/team-movil/julian_rios.jpg" alt="Julian Rios">
+      </div>
+      <div class="modal-team--user">
+        <p class="modal-team--name higia-font-helveticaneue-bold">Julián Ríos</p>
+        <span class="modal-team--line"></span>
+        <p class="modal-team--title higia-font-helveticaneue">Chief Executive Officer (CEO)</p>
+        <p class="modal-team--descrip higia-font-helveticaneue-thin">Mis principales tareas como Director ejecutivo de Higia Technologies consisten en cerciorarse de que la visión de la compañía sea la correcta, proveer los recursos necesarios para la creación de productos, construir la cultura corporativa, tomar las decisiones estratégicas para el óptimo funcionamiento de la empresa y supervisar el funcionamiento de la misma.</p>
+        <p class="modal-team--descrip higia-font-helveticaneue-thin">Actualmente, soy el primer y más jóven mexicano en ser galardonado con el Premio Global al Estudiante Emprendedor y la medalla Sol Azteca al emprendimiento por parte de la Presidencia de la República.</p>
+        <div class="modal-team-social">
+          <a href="https://www.linkedin.com/in/juli%C3%A1n-r%C3%ADos-cant%C3%BA-903b76106" target="_blank"><img src="img/team/team-movil/in.svg" alt="linkedin"></a>
+          <a href="#"><img src="img/team/team-movil/tw.svg" alt="twiter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal" data-remodal-id="alejandro">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="modal-team">
+      <div class="modal-team--photo">
+        <img src="img/team/team-movil/alejandro_casar.jpg" alt="Alejandro Casar">
+      </div>
+      <div class="modal-team--user">
+        <p class="modal-team--name higia-font-helveticaneue-bold">Alejandro Casar</p>
+        <span class="modal-team--line"></span>
+        <p class="modal-team--title higia-font-helveticaneue">Co-Artificial Intelligence Officer (Co-AIO)</p>
+        <p class="modal-team--descrip higia-font-helveticaneue-thin">
+          Mi trabajo consiste supervisar las áreas de inteligencia artificial y desarrollar algoritmos para la detección oportuna del pié diabético, cáncer de mama, cáncer testicular y prostático a partir de los datos obtenidos por nuestros productos.</p>
+          <p class="modal-team--descrip higia-font-helveticaneue-thin">Soy un graduado de Ingeniero en Sistemas  Digitales y Robótica del Tecnológico de Monterrey y, actualmente, estudio una maestría en inteligencia artificial haciendo investigación en algoritmos para detección de cáncer de mama.</p>
+        <div class="modal-team-social">
+          <a href="https://www.linkedin.com/in/alexcasar/" target="_blank"><img src="img/team/team-movil/in.svg" alt="linkedin"></a>
+          <a href="#"><img src="img/team/team-movil/tw.svg" alt="twiter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal" data-remodal-id="raymundo">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="modal-team">
+      <div class="modal-team--photo">
+        <img src="img/team/team-movil/raymundo_gonzalez.jpg" alt="Raymundo Gonzales">
+      </div>
+      <div class="modal-team--user">
+        <p class="modal-team--name higia-font-helveticaneue-bold">Raymundo González</p>
+        <span class="modal-team--line"></span>
+        <p class="modal-team--title higia-font-helveticaneue">Co-Artificial Intelligence Officer  (Co-AIO)</p>
+        <p class="modal-team--descrip higia-font-helveticaneue-thin">
+          Mi trabajo consiste supervisar las áreas de inteligencia artificial y desarrollar algoritmos para la detección oportuna del pié diabético, cáncer de mama, cáncer testicular y prostático a partir de los datos obtenidos por nuestros productos.</p>
+          <p class="modal-team--descrip higia-font-helveticaneue-thin">Soy un estudiante de Ciencias Computacionales y estadística en Minerva Schools KGI. En el pasado, he fungido como pasante investigador en Audible, compañía de Amazon, y colaborador en proyectos de investigación en el Laboratorio de Inteligencia Artificial de la Universidad de Stanford.</p>
+        <div class="modal-team-social">
+          <a href="https://www.linkedin.com/in/raymundo-gzz/
+" target="_blank"><img src="img/team/team-movil/in.svg" alt="linkedin"></a>
+          <a href="#"><img src="img/team/team-movil/tw.svg" alt="twiter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal" data-remodal-id="fernando">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="modal-team">
+      <div class="modal-team--photo">
+        <img src="img/team/team-movil/fernando_lopez.jpg" alt="Fernando Lopez">
+      </div>
+      <div class="modal-team--user">
+        <p class="modal-team--name higia-font-helveticaneue-bold">Fernando López</p>
+        <span class="modal-team--line"></span>
+        <p class="modal-team--title higia-font-helveticaneue">Director of Software Engineering</p>
+        <p class="modal-team--descrip higia-font-helveticaneue-thin">
+          En Higia funjo como director del área de software, desde la parte orientada al cliente hasta el servidor en nuestra aplicación y sitio web.</p>
+          <p class="modal-team--descrip higia-font-helveticaneue-thin">También es mi deber detectar e implementar nuevas tecnologías para integrar en nuestro desarrollo con el objetivo de mejorar nuestros productos.</p>
+        <div class="modal-team-social">
+          <a href="https://www.linkedin.com/in/fernando-l%C3%B3pez-mart%C3%ADnez-774823111/" target="_blank"><img src="img/team/team-movil/in.svg" alt="linkedin"></a>
+          <a href="#"><img src="img/team/team-movil/tw.svg" alt="twiter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal" data-remodal-id="antonio">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="modal-team">
+      <div class="modal-team--photo">
+        <img src="img/team/team-movil/antonio_torres.jpg" alt="Antonio Torres">
+      </div>
+      <div class="modal-team--user">
+        <p class="modal-team--name higia-font-helveticaneue-bold">Antonio Torres</p>
+        <span class="modal-team--line"></span>
+        <p class="modal-team--title higia-font-helveticaneue">Chief Technology Officer (CTO)</p>
+        <p class="modal-team--descrip higia-font-helveticaneue-thin">
+          Mi trabajo consiste en mirar hacia el futuro antes de que suceda. Tratar de arriesgarse y tomar decisiones innovadoras que lleven a la empresa a una posición más valiosa en el corto y largo plazo.</p>
+          <p class="modal-team--descrip higia-font-helveticaneue-thin">Soy el encargado de supervisar las áreas de tecnología y que nuestros productos y servicios cuenten con la calidad esperada.</p>
+        <div class="modal-team-social">
+          <a href="https://www.linkedin.com/in/jantoniotorres/" target="_blank"><img src="img/team/team-movil/in.svg" alt="linkedin"></a>
+          <a href="#"><img src="img/team/team-movil/tw.svg" alt="twiter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal" data-remodal-id="jose">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="modal-team">
+      <div class="modal-team--photo">
+        <img src="img/team/team-movil/jose_angel_lavariega.jpg" alt="Jose Angel Lavariega">
+      </div>
+      <div class="modal-team--user">
+        <p class="modal-team--name higia-font-helveticaneue-bold">José Ángel Lavariega</p>
+        <span class="modal-team--line"></span>
+        <p class="modal-team--title higia-font-helveticaneue">Chief Innovation Officer (CINO)</p>
+        <p class="modal-team--descrip higia-font-helveticaneue-thin">
+          Como Jefe de Innovación es mi deber asegurarme que nuestros procesos sean innovadores, permanezcan realistas y que sigamos una rigor profesional y científico en nuestras publicaciones, investigaciones y prototipos.</p>
+          <p class="modal-team--descrip higia-font-helveticaneue-thin">En las primeras etapas de nuestra compañía me he dedicado a realizar profundas investigaciones de mercado y asegurarme de que la tecnología implementada en nuestro producto sea la correcta.</p>
+        <div class="modal-team-social">
+          <a href="https://www.linkedin.com/in/jose-angellavariegagomez/" target="_blank"><img src="img/team/team-movil/in.svg" alt="linkedin"></a>
+          <a href="#"><img src="img/team/team-movil/tw.svg" alt="twiter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

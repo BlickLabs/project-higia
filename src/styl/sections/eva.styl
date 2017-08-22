@@ -58,7 +58,7 @@
   top 39%
   .stroke
       animation-delay 2s
-    
+
     .bubble
       animation-delay 2.6s
 
@@ -72,7 +72,7 @@
   animation evades .5s
   animation-delay 3.1s
   animation-fill-mode forwards
-  
+
   &:first-child
     margin-bottom 35px
 
@@ -86,7 +86,7 @@
 @keyframes evades-stroke
   0%
     width 0
-  
+
   100%
     width 100%
 
@@ -196,30 +196,30 @@
   align-items center
   margin-bottom 60px
   box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.2)
-  
+
   &:hover
     transform scale(1.03)
 
   &:nth-child(1)
     img
       width 74px
-  
+
   &:nth-child(2)
     img
       width 60px
-  
+
   &:nth-child(3)
     img
       width 60px
-  
+
   &:nth-child(4)
     img
       width 103px
-  
+
   &:nth-child(5)
     img
       width 88px
-  
+
   &:nth-child(6)
     img
       width 114px
@@ -261,7 +261,7 @@
   margin 0
   margin-bottom 20px
   color #4b4b4b
-  
+
   &:nth-child(3)
     margin 0
 
@@ -292,3 +292,229 @@
   text-align center
   letter-spacing 0.2px
   color #4b4b4b
+
+.only-mobile
+  display none
+
+@media screen and (max-width 425px)
+
+  .section_eva
+    padding-top 100px
+
+  .eva-section_one-title
+    font-size 21px
+
+  .eva-section_one-subtitle
+    font-size 20px
+
+  .eva-section_one-title-wrapper
+    margin-bottom 100px
+
+  .eva-section_one-cards
+    margin 0 auto 55px auto
+
+  .trials-partners-container
+    margin 0 auto 10px auto
+
+  // Desactive animation
+  .eva-image
+    transform none
+    animation none
+
+  .eva-description
+    opacity 1
+    animation none
+
+  // hidden columns in mobile
+  .eva-section_one-cards .eva-card
+    display none
+
+  .eva-section_one-title-wrapper
+    flex-direction column
+
+  .eva-section_one-title-divider
+    width remify(22)
+    height 0
+    background none
+    border-bottom solid 1px #ee9bbe
+    margin-bottom remify(10)
+    margin-top remify(10)
+
+  .eva-section_one-content
+    flex-direction column
+
+    .eva-feature.evades
+      display none
+
+  .eva-description-wrapper
+    position relative
+    padding-left remify(35)
+    padding-right remify(35)
+    margin-top 15%
+
+    & .eva-description
+      font-size 12px
+      line-height 1.5
+      letter-spacing .2px
+      color #4b4b4b
+
+    & .eva-section_one-title-divider
+      display inline-block
+      position absolute
+      margin-top 0
+      margin-right 0
+      border-left 2px solid #ee9bbe
+      width 2px
+      height remify(35)
+      top 5px
+
+  .eva-image-wrapper
+    height 290px
+
+  .eva-image
+    width 100%
+    padding-left remify(89)
+    padding-right remify(89)
+
+  .eva-description
+    padding-left remify(20)
+    line-height remify(28)
+
+  .eva-section_two-description-wrapper
+    max-width 100%
+    padding 0px 25px
+
+  .eva-section_two-description
+    font-size 12px
+    text-align left
+
+  .eva-section_two-title
+    font-size 21px
+
+  .trials-partners-container
+    padding 0 30px
+    max-width 100%
+
+  .trials-partner-wrapper
+    width 144px
+    height 117px
+
+  .eva-section_three
+    padding-top 65px
+    background-image none
+
+  .eva-section_three-container
+    max-width 100%
+
+    & .eva-section_three-title-wrapper
+      padding-left 15px
+      margin-left 25px
+      padding-right 125px
+
+    & .eva-section_three-title
+      padding-left 0
+      font-size 21px
+
+    & .eva-section-three-description-wrapper
+      padding-left 44px
+      padding-right 25px
+
+    & .eva-section_three-description
+      font-size 12px
+      line-height 17px
+      letter-spacing 0.2px
+
+  .arrival-container
+    box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.4)
+    z-index 2
+    width 310px
+    height 230px
+    // center an element with a position relavite
+    left 0
+    right 0
+    margin-left auto
+    margin-right auto
+
+  .arrival-title
+    font-size 20px
+    margin-top 25px
+
+  .arrival-info
+    font-size 12px
+    max-width 85%
+    margin 0 auto 15px auto
+
+  // section carousel
+
+  .eva-carousel
+    max-width 100%
+    padding 20px 0 20px 0
+    display flex !important
+    align-items center
+
+    .eva-card
+      padding-top 40px
+      margin 0 auto
+      box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.18)
+
+      &:focus
+        outline 0px
+
+      &:hover
+        transform 0
+
+      & .card-title-wrapper .card-title
+        line-height remify(25)
+
+    & .slick-current
+      transform scale(1.05)
+      transition .4s transform ease-in-out
+      background-color #fff
+
+    & .draggable
+      padding 15px 30px !important
+
+    & .arrow
+      padding-bottom 0
+
+    & .arrow-left
+      left 0
+
+    & .arrow-right
+      right 0
+
+  .eva-section_one-cards .only-mobile,
+  .eva-carousel .eva-card
+    display block
+
+@media screen and (max-width 320px)
+
+  .eva-image-wrapper
+    height 300px
+
+  .trials-partners-container
+    padding 0 20px
+
+  .trials-partner-wrapper
+    width 126px
+
+@media screen and (max-width 768px)
+
+  .eva-description
+    font-size remify(17)
+    line-height 27px
+
+  .eva-section_three-title-wrapper
+    padding-left 0
+    margin-left 38px
+    padding-right 0
+
+  .eva-section_three-title
+    padding-left 25px
+
+  .arrival-container
+    // center an element with a position relavite
+    left 0
+    right 0
+    margin-left auto
+    margin-right auto
