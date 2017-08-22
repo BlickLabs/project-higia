@@ -781,6 +781,8 @@
 @media (max-width 550px)
   .section_one-content
     margin-bottom 61px
+    margin-top 116px
+    padding-left 12%
 
   .facts-content
     max-width 287px
@@ -793,11 +795,11 @@
     text-align left
     margin-bottom 15px
 
-  .section_one-mask img
-    height 230px
-
-  .section_one-content
-    margin-top 116px
+  .section_one-mask-container
+    margin 0
+    padding 0
+    & img
+      height 120px
 
   .section_one-title
     width 222px
@@ -813,6 +815,17 @@
     width 136px
 
 @media screen and (max-width 500px)
+
+  .facts-content
+    & .fact:nth-child(1)
+      order 1
+    & .fact:nth-child(2)
+      order 3
+    & .fact:nth-child(3)
+      order 2
+    & .fact:nth-child(4)
+      order 4
+
   .section_one
     margin-bottom 11px
 
@@ -842,6 +855,9 @@
   .section_two-description
     width 244px
 
+    & span.higia-font-helveticaneue-bold
+      font-weight 100
+
   .eva-container
     width 182px
 
@@ -849,6 +865,10 @@
     margin-bottom 40px
     .feature:nth-child(1), .feature:nth-child(2)
       border-right 1px solid #4b4b4b
+
+  .section_two-features .feature
+    padding-right 5px
+    padding-left 5px
 
   .section_two-mobile-button
     display block
@@ -1010,6 +1030,7 @@
     center-block()
 
   .article-button
+    display none
     margin-right 14px
 
   .read_all-button
@@ -1039,7 +1060,3 @@
 
   #button-wrapper
     padding 0
-
-@media (max-width 400px)
-  .section_one-mask img
-    height 206px
