@@ -738,6 +738,9 @@
   cursor pointer
   transition .2s background-color ease-in-out
 
+#home-no-desktop
+  display none
+
 @media (max-width 1138px)
   .facts
     flex-direction column
@@ -770,13 +773,44 @@
   .lines-container
     left 20px
 
+  .section_facts-title_divider
+    width 22px
+    height 1px
+    background-color #ee9bbe
+
+  .facts-title-container
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+    & .facts-title
+      margin-bottom 11px
+
 @media (max-width 811px)
   .lines-container
     display none
 
-@media (max-width 765px)
+  .section_one-content
+    padding-left 70px
+    padding-right 15px
+
+  .articles
+    padding-left 8px
+    padding-right 8px
+
+@media (max-width 768px)
+
+  .section_five
+    margin-left 8px
+
   .section_one-mask-container
-    margin-top 88px
+    margin-top 50px
+    margin-left 0
+    padding-left 0
+
+    & img
+      height 200px
 
 @media (max-width 550px)
   .section_one-content
@@ -815,6 +849,11 @@
     width 136px
 
 @media screen and (max-width 500px)
+
+  .section_one-mask-container
+    margin-left 0
+    margin-top 48px
+    padding-left 0
 
   .facts-content
     & .fact:nth-child(1)
