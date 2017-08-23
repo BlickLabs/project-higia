@@ -9,9 +9,10 @@
     })
   }
 
-  function checkTeam(mediaquery) {
+  function checkTeam(mediaquer) {
+    var el = $('.team-our-team');
     if (mediaquery.matches) {
-      el.unsticky();
+      el.unstick();
     } else {
       el.sticky({
         topSpacing: 126
