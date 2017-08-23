@@ -151,7 +151,7 @@
     height auto
     text-align center
 
-@media screen and (max-width: 12804px)
+@media screen and (max-width: 1440px)
 
   .team-photo-container
     width 180px
@@ -191,6 +191,9 @@
   .team-descrip
     display none
 
+  .team-title
+    text-align center
+
   .team-container
     padding-top 100px
     padding-left 50px
@@ -201,8 +204,11 @@
   .team-photos
     padding-top 0
     padding-left 0
-    overflow-y hidden
+    overflow-y scroll
     max-width 100%
+    height 100%
+    display flex
+    justify-content center
 
   .team-photo-container
     width 138px
@@ -298,9 +304,14 @@
     margin-right 0
     margin-bottom 0
 
+  .team-photos
+    display flex
+    justify-content flex-start
+
   .team-title,
   .team-photos .team-advisor
-    font-size 20px
+    font-size 21px
+    text-align center
 
   .team-photos
     height 100%
@@ -312,6 +323,11 @@
     width 125px
 
 @media screen and (max-width: 360px)
+
+  .team-title,
+  .team-advisor
+    text-align center
+    font-size 21px
 
   .team-photo-container
     width 115px
