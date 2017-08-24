@@ -1,4 +1,5 @@
-$('.section-press-carousel').slick({
+(function (){
+  $('.section-press-carousel').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   centerPadding: '5px',
@@ -7,7 +8,7 @@ $('.section-press-carousel').slick({
   nextArrow: '<img class="slick-next" src="img/slider-arrow/right.svg">',
   responsive: [
     {
-      breakpoint: 414,
+      breakpoint: 750,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -16,3 +17,4 @@ $('.section-press-carousel').slick({
     }
   ]
 });
+})();

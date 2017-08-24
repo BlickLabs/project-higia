@@ -1,13 +1,15 @@
 .team-container
+  height 1105px
   padding-top 200px
   display flex
   justify-content space-between
-  items-aling center
+  align-items flex-start
   padding-left 9%
   padding-right 50px
   padding-bottom 135px
 
 .team-our-team
+  width 390px !important
   max-width 390.5px
 
 .team-line // Line pink of the title
@@ -25,30 +27,32 @@
   line-height 39px
   letter-spacing .1px
   margin-top 17px
-  margin-bottom 33px
+  margin-bottom 10px
 
 .team-user
   color #4b4b4b
   font-size remify(18)
   line-height 39px
   letter-spacing .9px
-  margin-top 55px
+  margin-top 20px
+  margin-bottom 5px
 
 .team-descrip
-  margin-top 12px
+  margin-top 0px
   color #4c4c4c
-  font-size remify(17)
+  font-size 14px
   letter-spacing .2px
-  line-height 23px
+  line-height 17px
 
-// Seccion de fotos
+// Section photos
 .team-photos
   padding-top remify(18)
+  padding-left remify(12)
   flex-wrap wrap
   display flex
-  justify-content space-around
-  width 742px
-  max-height 480px
+  justify-content flex-start
+  width 625px
+  height 700px
   overflow-y scroll
 
   &::-webkit-scrollbar
@@ -93,7 +97,8 @@
 .team-photo-container
   width 229px
   height 220px
-  margin-bottom 19px
+  margin-bottom 15px
+  margin-right 15px
 
 .team-photo-img
   position relative
@@ -105,7 +110,7 @@
     height 20.9px
 
   & p
-    margin-top 56px
+    margin-top 10px
     margin-bottom 2px
     font-size remify(18)
     line-height 21px
@@ -146,38 +151,68 @@
     height auto
     text-align center
 
+@media screen and (max-width: 1440px)
+
+  .team-photo-container
+    width 180px
+    height auto
+
 @media screen and (max-width: 1024px)
+
+  .team-photo-img p
+    line-height 15px
+    margin-top 4px
+    font-size 12px
+
+  .team-photo-img span
+    font-size 11px
+    line-height 10px
+
+  .team-photo-mask .team-social
+    margin-top .5rem
+
+  .team-photo-mask .team-social img
+    width 15px
+
+  .team-photo-container
+    width 142px
+    height 134px
+
   .team-our-team
     max-width 365.5px
 
   .team-photos
     max-width 495px
 
-@media screen and (max-width: 786px)
-  .team-photo-container
-    width 200px
-    height auto
-    margin-bottom 15px
-
-// start styles mobile version
-@media screen and (max-width: 414px)
+@media screen and (max-width: 876px)
   .team-line,
   .team-user,
   .team-social,
   .team-descrip
     display none
 
+  .team-title
+    text-align center
+
   .team-container
     padding-top 100px
+    padding-left 50px
+    padding-right 50px
     flex-direction column
     align-items center
 
   .team-photos
-    max-width 212px
+    padding-top 0
+    padding-left 0
+    overflow-y scroll
+    max-width 100%
+    height 100%
+    display flex
+    justify-content center
 
   .team-photo-container
-    width 103px
-    height 99px
+    width 138px
+    height auto
     margin-bottom 3px
     margin-left 3px
     overflow hidden
@@ -196,6 +231,7 @@
 
   // styles for modal
   .remodal
+    margin-top 50px
     max-width 293px
     background-color transparent
     padding 0
@@ -261,3 +297,43 @@
 
     & a
       margin-right 9px
+
+@media screen and (max-width: 414px)
+
+  .team-photo-container
+    margin-right 0
+    margin-bottom 0
+
+  .team-photos
+    display flex
+    justify-content flex-start
+
+  .team-title,
+  .team-photos .team-advisor
+    font-size 21px
+    text-align center
+
+  .team-photos
+    height 100%
+    overflow-y scroll
+
+@media screen and (max-width: 375px)
+
+  .team-photo-container
+    width 125px
+
+@media screen and (max-width: 360px)
+
+  .team-title,
+  .team-advisor
+    text-align center
+    font-size 21px
+
+  .team-photo-container
+    width 115px
+    margin-bottom 0
+
+@media screen and (max-width: 320px)
+
+  .team-photo-container
+    width 100px
