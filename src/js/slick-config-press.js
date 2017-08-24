@@ -8,7 +8,7 @@
   nextArrow: '<img class="slick-next" src="img/slider-arrow/right.svg">',
   responsive: [
     {
-      breakpoint: 426,
+      breakpoint: 750,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
