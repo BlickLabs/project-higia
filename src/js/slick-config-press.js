@@ -1,4 +1,5 @@
-$('.section-press-carousel').slick({
+(function (){
+  $('.section-press-carousel').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   centerPadding: '5px',
@@ -16,3 +17,4 @@ $('.section-press-carousel').slick({
     }
   ]
 });
+})();
