@@ -1,6 +1,11 @@
-var sOneTitle = document.getElementById('section_one-title');
-var span = document.getElementById('topink');
+if (indexLocation) {
 
-sOneTitle.addEventListener('mouseover', function () {
-  span.classList.add('lifePink')
-});
+  var animated = $('.section_one');
+  var logo = $('.section_one-mask-container img');
+  var span = $('#topink');
+
+  animated.hover(function() {
+    logo.addClass('logoPink')
+    span.addClass('lifePink');
+  });
+}

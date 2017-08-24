@@ -7,21 +7,29 @@
     {% block extra_css %}{% endblock %}
     <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
     <title>{% if section != 'index' %}{% block title %}{% endblock %} | {% endif %}{{ projectName }}</title>
   </head>
   <body>
     <div id="page">
-      {% include 'partials/navbar.njk' %}
+      {% if section == 'index' or section == 'eva' or section == 'about_us' or section == 'team' or section == 'allies' or section == 'news' or section == 'press' or section == 'contact' %}
+        {% include 'partials/navbar.njk' %}
+      {% else %}
+        {% include 'partials/navbar-es.njk' %}
+      {% endif %}
       <main>
         {% block content %}{% endblock %}
       </main>
-      {% include 'partials/footer.njk' %}
+      {% if section == 'index' or section == 'eva' or section == 'about_us' or section == 'team' or section == 'allies' or section == 'news' or section == 'press' or section == 'contact' %}
+        {% include 'partials/footer.njk' %}
+      {% else %}
+        {% include 'partials/footer-es.njk' %}
+      {% endif %}
     </div>
     {% block js_libs_config %}
     {% endblock %}

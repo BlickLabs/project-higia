@@ -1,5 +1,247 @@
-.section-press
-  margin-top 100px
+.section-one-press
+  padding-top 200px
+  padding-bottom 124.6px
+  background-image url('../img/backgrounds/section1-press.jpg')
+  background-repeat no-repeat
+  background-size contain
+  background-position left 111px
+
+.section-press-carousel-container
+  max-width 707px
+  margin 0 auto
+
+  & .draggable
+    padding 5px !important
+
+.section-press-title
+  font-size remify(45)
+  line-height 39px
+  letter-spacing .1px
+  text-align center
+  color #4b4b4b
+
+.slick-prev,
+.slick-next
+  position absolute
+  top 50%
+  width 10px
+
+.slick-prev
+  right 105%
+
+.slick-next
+  left 105%
 
 .section-press-carousel-item
+  outline 0px
+  text-align center
+  display flex !important
+  flex-direction column
+  justify-content center
+  align-items center
+  border-radius 2px
+  background-color #ffffff
+  box-shadow 0 2px 7px 0 rgba(0, 0, 0, 0.09)
   width 339px
+  height 264px
+  margin-left 10px
+  margin-right 10px
+
+.section-press-carousel-img
+  width 121px
+
+  & img
+    width 100%
+
+.section-press-carousel-text
+  padding 0 30px 0 30px
+  margin-top 31.4px
+  margin-bottom 33px
+  font-size remify(13)
+  line-height 19px
+  letter-spacing .2px
+  color #4b4b4b
+
+.higia-press-btn
+  border 0
+  padding 9.8px 15.4px
+  font-size remify(11)
+  color #fff
+  letter-spacing 1.1px
+  cursor pointer
+  transition .2s background-color ease-in-out
+
+// Section 2
+
+.section-two-press
+  background-image url('../img/backgrounds/section2-press.jpg')
+  background-size 100% 100%
+  background-repeat no-repeat
+  padding-top 54.4px
+  padding-left 214px
+  padding-bottom 84.4px
+
+.section-press-two-title-container
+ width 318.7px
+
+.section-press-two-title
+  font-size remify(29)
+  line-height 38px
+  letter-spacing .1px
+  color #4b4b4b
+  margin-bottom 65.5px
+  margin-bottom 30px
+
+.placeholder-thin
+  font-weight 100
+  font-size remify(17)
+
+// Hace los inputs del formulario de Press transparentes
+.section_seven-field
+  background transparent
+
+.press-btn-margintop
+  margin-top 100px
+
+// styles dots for slick
+.slick-dotted
+  &.slick-slider
+    margin-bottom 30px
+
+.slick-dots
+  position absolute
+  bottom -25px
+  display block
+  width 100%
+  padding 0
+  margin 0
+  list-style none
+  text-align center
+
+  li
+    position relative
+    display inline-block
+    width 20px
+    height 20px
+    margin 0 5px
+    padding 0
+    cursor pointer
+
+    button
+      font-size 0
+      line-height 0
+      display block
+      width 20px
+      height 20px
+      padding 5px
+      cursor pointer
+      color transparent
+      border 0
+      outline none
+      background transparent
+      &:before
+        font-family 'slick'
+        font-size 6px
+        line-height 20px
+        position absolute
+        top 0
+        left 0
+        width 20px
+        height 20px
+        content '•'
+        text-align center
+        opacity .25
+        color black
+        -webkit-font-smoothing antialiased
+        -moz-osx-font-smoothing grayscale
+    &.slick-active
+      button
+        &:before
+          opacity .75
+          color black
+
+.slick-dots li button:hover,
+.slick-dots li button:focus
+  outline none
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+  opacity 1
+
+// start styles mobile version
+@media screen and (max-width: 414px)
+
+  .section-press-title
+    font-size 22px
+    margin-bottom 40px
+
+  .section-one-press
+    padding-bottom 40px
+    padding-top 100px
+    background-image url('../img/press/section1-press-movil.jpg')
+    background-position bottom
+
+  .section-press-carousel-container
+    max-width 280px
+
+  .slick-prev
+    right 100%
+
+  .slick-next
+    left 100%
+
+  .section-two-press
+    padding-left 58px
+    padding-right 60px
+    background-image url('../img/press/section2-press-movil.jpg')
+
+  .section-press-two-title-container
+    max-width 211px
+
+  .section-press-two-title
+    font-size 18px
+    line-height 23px
+    letter-spacing 0.1px
+
+  input[type=text],
+  input[type=email]
+    width 100%
+
+// dots
+.slick-dots li.slick-active button:before
+  color #ee9bbe
+
+.slick-dots li button:before
+  color #4c4c4c
+  opacity 1
+
+.slick-dots li
+  width 10px
+  margin 0
+
+  & li button
+    width 0
+    padding 0
+
+@media screen and (max-width: 768px)
+
+  .slick-next
+    left 100%
+
+  .slick-prev
+    right 100%
+
+  .button-wrapper
+    padding-left 0
+
+@media (min-width: 425px) and (max-width: 750px)
+
+  .section-press-carousel-container
+    max-width 350px
+
+  .section-two-press
+    padding-left 60px
+
+  input[type=text],
+  input[type=email]
+    width 80%
