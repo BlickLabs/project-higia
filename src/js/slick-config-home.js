@@ -26,7 +26,11 @@
       evaFeatures();
 
     } else {
-      $('.articles').slick('unslick');
+      try {
+        $('.articles').slick('unslick');
+      } catch (e) {
+        console.log('.');
+      }
     }
   }
   homePressCarroussel()
