@@ -5,7 +5,7 @@
 
   if (!mediaquery.matches) {
     el.sticky({
-      topSpacing: 126
+      topSpacing: 52
     })
   }
 
@@ -15,7 +15,7 @@
       el.unstick();
     } else {
       el.sticky({
-        topSpacing: 126
+        topSpacing: 52
       })
     }
   }
