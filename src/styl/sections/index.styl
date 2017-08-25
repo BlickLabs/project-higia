@@ -111,18 +111,26 @@
   pointer-events none
 
 .section_one-mask-container
+  filter grayscale(1)
+  background-repeat no-repeat
+  background-size 63%
+  background-image url('../img/backgrounds/section-1-mask.png')
   max-width 1000px
+  height 318px
   text-align left
   padding 0 44px
   margin 132px 22px 0
 
-.section_one-mask img
-  filter grayscale(1)
-  height 377px
-
-.logoPink
-  filter grayscale(0) !important
-  transition filter .8s ease
+.section_one-mask-container2
+  filter grayscale(0)
+  background-repeat no-repeat
+  background-image url('../img/home/higiaLogo.png')
+  max-width 1000px
+  height 318px
+  text-align left
+  padding 0 44px
+  margin 132px 22px 0
+  transition filter .8s ease, background-image .8s ease-in-out
 
 .section_one-content
   max-width 1136px
@@ -787,6 +795,25 @@
     & .facts-title
       margin-bottom 11px
 
+  .section_one-content
+    margin-top 100px
+    margin-bottom 75px
+    max-width 1136px
+    padding-top 32px
+    padding-left 458px
+    padding-right 15px
+
+  .section_one-title
+    font-size 30px
+
+  .section_one-mask-container
+    margin 24px auto 0
+    background-position left
+
+  .section_one-mask-container2
+    margin 24px auto 0
+    background-position left
+
 @media (max-width 811px)
   .lines-container
     display none
@@ -820,6 +847,25 @@
 
     & img
       height 200px
+
+  .section_one-content
+    margin-top 100px
+    margin-bottom 75px
+    max-width 1136px
+    padding-top 32px
+    padding-left 458px
+    padding-right 15px
+
+  .section_one-title
+    font-size 30px
+
+  .section_one-mask-container
+    margin 24px auto 0
+    background-position left
+
+  .section_one-mask-container2
+    margin 24px auto 0
+    background-position left
 
 @media (max-width 550px)
   .section_one-content
@@ -860,11 +906,30 @@
   .section_two-subtitle
     max-width 270px
 
+  .section_one-content
+    margin-top 180px
+    margin-bottom 75px
+    max-width 1136px
+    padding-top 32px
+    padding-left 50px
+    padding-right 15px
+
+  .section_one-title
+    font-size 23px
+
+  .section_one-mask-container
+    margin 24px auto 0
+    background-position left
+
+  .section_one-mask-container2
+    margin 24px auto 0
+    background-position left
+
 @media screen and (max-width 500px)
 
   .section_one-mask-container
     margin-left 0
-    margin-top 48px
+    margin-top 0
     padding-left 0
 
   .facts-content
@@ -872,7 +937,7 @@
       order 1
     & .fact:nth-child(2)
       order 3
-    & .fact:nth-child(3)+
+    & .fact:nth-child(3)
       order 2
     & .fact:nth-child(4)
       order 4
@@ -949,7 +1014,7 @@
       width 60px
 
     .eva-feature-graph
-      margin-left 6px
+      margin-left -6px
 
   .eva-feature.text
     bottom 35px
@@ -959,7 +1024,7 @@
       width 18px
 
   .eva-feature-graph
-    margin-right 7px
+    margin-right -26px
 
   .stroke-container
     width 10px
@@ -1120,3 +1185,23 @@
 
   .article
     width 300px
+
+@media (min-width: 500px) and (max-width: 890)
+  .section_one-content
+    margin-top 100px
+    margin-bottom 75px
+    max-width 1136px
+    padding-top 32px
+    padding-left 458px
+    padding-right 15px
+
+  .section_one-title
+    font-size 30px
+
+  .section_one-mask-container
+    margin 24px auto 0
+    background-position left
+
+  .section_one-mask-container2
+    margin 24px auto 0
+    background-position left
