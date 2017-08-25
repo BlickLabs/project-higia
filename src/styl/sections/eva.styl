@@ -297,7 +297,37 @@
 .only-mobile
   display none
 
+@media screen and (max-width 768px)
+
+  .eva-section_one-title
+    margin-right 25px
+
+  .eva-description
+    font-size remify(17)
+    line-height 27px
+
+  .eva-section_three-title-wrapper
+    padding-left 0
+    margin-left 38px
+    padding-right 0
+
+  .eva-section_three-title
+    padding-left 25px
+
+  .arrival-container
+    // center an element with a position relavite
+    left 0
+    right 0
+    margin-left auto
+    margin-right auto
+
 @media screen and (max-width 425px)
+
+  .eva-section_two
+    padding-top 52px
+
+  .eva-section_one-title
+    margin-right 0
 
   .section_eva
     padding-top 100px
@@ -316,9 +346,15 @@
 
   .trials-partners-container
     margin 0 auto 10px auto
+    justify-content space-between
+    max-width 72%
+
+  .eva-image-wrapper
+    height auto
 
   // Desactive animation
   .eva-image
+    width 90%
     transform none
     animation none
 
@@ -340,6 +376,8 @@
     border-bottom solid 1px #ee9bbe
     margin-bottom remify(10)
     margin-top remify(10)
+    margin-right auto
+    margin-left auto
 
   .eva-section_one-content
     flex-direction column
@@ -351,7 +389,7 @@
     position relative
     padding-left remify(35)
     padding-right remify(35)
-    margin-top 15%
+    margin-top 5%
 
     & .eva-description
       font-size 12px
@@ -370,7 +408,7 @@
       top 5px
 
   .eva-image-wrapper
-    height 290px
+    height auto
 
   .eva-image
     width 100%
@@ -394,11 +432,12 @@
 
   .trials-partners-container
     padding 0 30px
-    max-width 100%
+    max-width 90%
 
   .trials-partner-wrapper
-    width 144px
+    width 127px
     height 117px
+    margin-bottom 20px
 
   .eva-section_three
     padding-top 65px
@@ -490,32 +529,16 @@
 
 @media screen and (max-width 320px)
 
+  .eva-section_one-title
+    margin-right 0
+
   .eva-image-wrapper
-    height 300px
+    height 200px
 
   .trials-partners-container
     padding 0 20px
+    max-width 85%
 
   .trials-partner-wrapper
-    width 126px
-
-@media screen and (max-width 768px)
-
-  .eva-description
-    font-size remify(17)
-    line-height 27px
-
-  .eva-section_three-title-wrapper
-    padding-left 0
-    margin-left 38px
-    padding-right 0
-
-  .eva-section_three-title
-    padding-left 25px
-
-  .arrival-container
-    // center an element with a position relavite
-    left 0
-    right 0
-    margin-left auto
-    margin-right auto
+    width 110px
+    height 97px
