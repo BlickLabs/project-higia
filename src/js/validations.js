@@ -1,4 +1,4 @@
-(function () {
+
   $('#contact-form').validate({
     rules: {
       name: {
@@ -39,5 +39,3 @@
       }
     }
   });
-
-})();

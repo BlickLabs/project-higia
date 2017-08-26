@@ -10,8 +10,8 @@
       var $form = $(form).serialize(),
         fields = $(form).find('select, input, textarea, button').not('[disabled]'),
         formMessage = $(form).find('.form-message'),
-        successMessage = $('<i class="fa fa-check-circle"></i><span>Mensaje enviado exitosamente</span>'),
-        errorMessage = $('<i class="fa fa-times-circle"></i><span>Ocurrió un error</span>'),
+        successMessage = $('<i class="fa fa-check-circle"></i><span></span>'),
+        errorMessage = $('<i class="fa fa-times-circle"></i><span></span>'),
         setMessage = function (success) {
           var message = success ? successMessage : errorMessage;
           fields.removeAttr('disabled');
@@ -31,7 +31,7 @@
         data: $form
       })
         .done(function (data) {
-          setMessage(parseInt(data) === 1);
+          setMessage(parseInt(data) === 1 || data.status === "subscribed");
           form.reset();
         })
         .fail(function () {
