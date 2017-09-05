@@ -1,3 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
-    <path fill="none" fill-rule="evenodd" stroke="#EE9BBE" stroke-linecap="round" stroke-width="1.953" d="M14.25 1.78L8 8.03 1.75 1.78"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="1.1-Homepage_expand-|-Higia" transform="translate(-633.000000, -1903.000000)" stroke-width="1.9531" stroke="#FFFFFF">
+            <g id="Group-22" transform="translate(608.000000, 1873.000000)">
+                <g id="np_down-arrow_1095875_EE9BBE" transform="translate(26.000000, 31.000000)">
+                    <polyline id="Shape" points="13.24928 0.7806 6.99936 7.03052 0.74944 0.7806"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
