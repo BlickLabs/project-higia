@@ -25,7 +25,8 @@
     </div>
     <div class="site-navbar__lang ">
       <div class="lang-div"></div>
-      <a href="{{ section }}" class="site-navbar__lang-link active higia-font-helveticaneue-medium">EN</a>
+      <!--<a href="{{ section }}" class="site-navbar__lang-link active higia-font-helveticaneue-medium">EN</a>-->
+      <a href="{% if section == 'index-es' %}/{% elif section == 'eva-es' %}eva{% elif section == 'about_us-es' %}about_us{% elif section == 'team-es' %}team{% elif section == 'allies-es' %}allies{% elif section == 'news-es' %}news{% elif section == 'press-es' %}press{% elif section == 'contact-es' %}contact{% endif %} " class="site-navbar__lang-link active higia-font-helveticaneue-medium">EN</a>
       <a href="{% if section == 'index' %}index-es{% elif section == 'eva' %}eva-es{% elif section == 'about_us' %}about_us-es{% elif section == 'team' %}team-es{% elif section == 'allies' %}allies-es{% elif section == 'news' %}news-es{% elif section == 'press' %}press-es{% elif section == 'contact' %}contact-es{% endif %} " class="site-navbar__lang-link higia-font-helveticaneue-light">ES</a>
     </div>
   </div>
