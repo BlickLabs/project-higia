@@ -1,6 +1,6 @@
 <nav class="site-navbar">
   <div class="site-navbar__desktop-logo-container">
-    <a href="index.html"><h1 class="higia-font-gtamericatrial-medium ">Higia Technologies</h1></a>
+    <a href="/"><h1 class="higia-font-gtamericatrial-medium ">Higia Technologies</h1></a>
   </div>
   <div class="site-navbar__menu-trigger">
     <span class="fa fa-bars"></span>
@@ -8,25 +8,25 @@
   <div class="site-navbar__menu-container">
     <div class="site-navbar-icon-close">
       <div class="site-navbar-lang">
-        <a href="index.html" class="{% if section == 'index' or section == 'eva' or section == 'about_us' or section == 'team' or section == 'allies' or section == 'news' or section == 'press' or section == 'contact' %} higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">En</a>
-        <a href="index-es.html" class="{% if section == 'index-es' or section == 'eva-es' or section == 'about_us-es' or section == 'team-es' or section == 'allies-es' or section == 'news-es' or section == 'press-es' or section == 'contact-es' %} higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Es</a>
+        <a href="/" class="{% if section == 'index' or section == 'eva' or section == 'about_us' or section == 'team' or section == 'allies' or section == 'news' or section == 'press' or section == 'contact' %} higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">En</a>
+        <a href="/index-es" class="{% if section == 'index-es' or section == 'eva-es' or section == 'about_us-es' or section == 'team-es' or section == 'allies-es' or section == 'news-es' or section == 'press-es' or section == 'contact-es' %} higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Es</a>
       </div>
       <a id="navbar-close" href="."><img src="img/navbar-mobile/close.png"></a>
     </div>
     <div class="site-navbar__menu">
-      <a href="index.html" class="site-navbar__menu-link {% if section == 'index' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Home</a>
-      <a href="eva.html" class="site-navbar__menu-link {% if section == 'eva' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Eva</a>
-      <a href="about_us.html" class="site-navbar__menu-link {% if section == 'about_us' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">About Us</a>
-      <a href="team.html" class="site-navbar__menu-link {% if section == 'team' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Team</a>
-      <a href="allies.html" class="site-navbar__menu-link {% if section == 'allies' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Allies</a>
-      {# <a href="news.html" class="site-navbar__menu-link {% if section == 'news' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">News</a> #}
-      <a href="press.html" class="site-navbar__menu-link {% if section == 'press' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Press</a>
-      <a href="contact.html" class="site-navbar__menu-link {% if section == 'contact' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Contact</a>
+      <a href="/" class="site-navbar__menu-link {% if section == 'index' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Home</a>
+      <a href="eva" class="site-navbar__menu-link {% if section == 'eva' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Eva</a>
+      <a href="about_us" class="site-navbar__menu-link {% if section == 'about_us' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">About Us</a>
+      <a href="team" class="site-navbar__menu-link {% if section == 'team' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Team</a>
+      <a href="allies" class="site-navbar__menu-link {% if section == 'allies' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Allies</a>
+      {# <a href="news" class="site-navbar__menu-link {% if section == 'news' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">News</a> #}
+      <a href="press" class="site-navbar__menu-link {% if section == 'press' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Press</a>
+      <a href="contact" class="site-navbar__menu-link {% if section == 'contact' %} active higia-font-helveticaneue-bold {% else %} higia-font-helveticaneue-thin {% endif %}">Contact</a>
     </div>
     <div class="site-navbar__lang ">
       <div class="lang-div"></div>
-      <a href="{{ section }}.html" class="site-navbar__lang-link active higia-font-helveticaneue-medium">EN</a>
-      <a href="{% if section == 'index' %}index-es.html{% elif section == 'eva' %}eva-es.html{% elif section == 'about_us' %}about_us-es.html{% elif section == 'team' %}team-es.html{% elif section == 'allies' %}allies-es.html{% elif section == 'news' %}news-es.html{% elif section == 'press' %}press-es.html{% elif section == 'contact' %}contact-es.html{% endif %} " class="site-navbar__lang-link higia-font-helveticaneue-light">ES</a>
+      <a href="{{ section }}" class="site-navbar__lang-link active higia-font-helveticaneue-medium">EN</a>
+      <a href="{% if section == 'index' %}index-es{% elif section == 'eva' %}eva-es{% elif section == 'about_us' %}about_us-es{% elif section == 'team' %}team-es{% elif section == 'allies' %}allies-es{% elif section == 'news' %}news-es{% elif section == 'press' %}press-es{% elif section == 'contact' %}contact-es{% endif %} " class="site-navbar__lang-link higia-font-helveticaneue-light">ES</a>
     </div>
   </div>
 </nav>
