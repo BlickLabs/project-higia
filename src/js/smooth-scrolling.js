@@ -13,7 +13,7 @@
       lines = document.querySelectorAll('.line'),
       circuitMask =document.querySelector('.circuit-mask');
 
-  if ( (window.location.pathname === '/' || window.location.pathname === '/project-higia/' || window.location.pathname === '/index.html' || window.location.pathname === '/project-higia/index.html') || (window.location.pathname === '/index-es.html' || window.location.pathname === '/project-higia/index-es.html') ) {
+  if ( (window.location.pathname === '/' || window.location.pathname === '/project-higia/' || window.location.pathname === '/index' || window.location.pathname === '/project-higia/index') || (window.location.pathname === '/index-es' || window.location.pathname === '/project-higia/index-es') ) {
 
     $(window).scroll(function() {
       var sY = window.scrollY;

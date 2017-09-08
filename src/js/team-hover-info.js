@@ -176,12 +176,12 @@
   ];
 
   // Set by default the description of element 0, in this case "Julian"
-  if (location.pathname === '/team-es.html' || location.pathname === '/project-higia/team-es.html') {
+  if (location.pathname === '/team-es' || location.pathname === '/project-higia/team-es') {
     $('#js-hover-title').html(team[0].title_es);
     $('#js-hover-name').html(team[0].name);
     $('#js-hover-area').html(team[0].area);
     $('#js-hover-description').html(team[0].description_es);
-  } else if (location.pathname === '/team.html' || location.pathname === '/project-higia/team.html') {
+  } else if (location.pathname === '/team' || location.pathname === '/project-higia/team') {
     $('#js-hover-title').html(team[0].title);
     $('#js-hover-name').html(team[0].name);
     $('#js-hover-area').html(team[0].area);
