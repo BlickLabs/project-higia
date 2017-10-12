@@ -1,0 +1,19 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Live
+{% endblock %}
+
+{% block content %}
+  <div class="live-container">
+    <div class="live-content">
+      <p class="higia-font-helveticaneue-bold live-header">Estamos a punto de <span class="live-pink">cambiar</span> el <span class="live-pink">mundo...</span></p>
+      <div class="live-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jM5-xGsW4N8" frameborder="0" allowfullscreen class="live-iframe"></iframe>
+      </div>
+      <p class="higia-font-helveticaneue live-subtitle">Para más información visita <a href="http://evabra.mx" target="_blank" class="higia-font-helveticaneue-medium live-pink">evabra.mx</a></p>
+    </div>
+{% endblock %}
